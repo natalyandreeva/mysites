@@ -1,0 +1,446 @@
+/* normalize.css */
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:Verdana;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+/* защита текста от выделения */
+.noselect {-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-o-user-select: none;user-select: none;}
+/* Базовые стили */
+*{margin:0;padding:0;border:0;outline:0;font-family:Verdana;}
+*,*:after,*::before{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;} /* Фиксит проблемы разного отображения input полей и не только в разных браузерах */
+button,input[type="button"]:hover,label{cursor:pointer;}
+select[disabled="disabled"]{opacity:0.4;}
+ol,ul{list-style:none;}
+html{overflow:auto;min-width:315px;}
+html,body{font-size:13px;height:100%;position:relative;}
+h1{font-size:20px;color:white;margin:4px 0 0 10px;clear:both;}
+h2{font-size:16px;color:#0f1f94;margin:10px 5px;clear:both}
+a{text-decoration: none;}
+table{border-collapse:collapse;}
+nav select{opacity:1 !important;background-color:white !important;float:right;margin:2px 50px;width:290px;}
+p{text-indent:15px;margin:5px 10px 0 10px;font-size:13px;text-align:justify}
+input,textarea,select, li.drop{font-size:16px;padding:5px;color:gray;margin:0;-moz-appearance:none;background:none repeat scroll 0 0 rgba(255, 255, 255, 0.5);border:1px solid grey;}
+textarea{overflow:auto;} /* Удаляем полосы прокрутки многострочного поля в IE */
+div{height:auto}
+/* Базовые классы */
+#slider-wrapper{visibility:hidden;} /* Позволяет красиво отобразить страницу до момента полной загрузки nivo.css */
+.bl{display:block}
+.clears{width:100%;height:10px;display:inline-block;clear:both;margin:42px;}
+.shirina{max-width:1200px;padding:0 20px;margin-top:20px;}
+.red{color:red}
+.green{color:green}
+.centr{text-align:center}
+.gray{background-color:darkgray !important}
+.gc{color:gray}
+.btn{background-clip:padding-box;border:1px solid rgba(0, 0, 0, 0.49);font-weight: bold;outline: medium none;transition: all 0.1s ease-in-out 0s;width: 300px;line-height: 30px;font-size: 16px;}
+.textmikro{font-size:11px}
+.top{display:inline}
+.uzko{max-width: 800px;min-width: 300px;margin:40px 0}
+.rght{text-align:right;}
+.bigtext{font-size:16px}
+.underline{text-decoration:underline;}
+.hide{display:none !important;}
+#nokodno{max-width:1000px;width:99%}
+#nokodno div{float:right}
+.tablunsubs td{height:50px}
+.tablunsubstd{width:400px;}
+.bcs{font-size:120%;font-weight:bold;}
+.content{width:96%;display:block;float:left;padding-top:20px;min-width:300px;}
+.bok{float:left;display:block;min-width:3px;width:2%;height:3px;}
+.fl{float:left;}
+.fr{float:right;}
+.maininfo{display:inline-block;overflow:hidden;} /*Текстовый блок на главной странице сайта*/
+.maininfo p{margin-left:20px}
+#fbblok{width:calc(100% - 300px)} /* Блок на странице с формой обратной связи */
+#button,#button:hover{box-shadow:none !important;margin:0 !important;}
+.fixaintabs{border-bottom:medium none !important; display:inline !important; line-height:normal !important;}
+.bloki{width:460px;float:left; height:205px;padding-left: 100px;position: relative;margin:10px}
+.imginbloki{left: 0;position: absolute;width:95px}
+.bloki h3{text-align: left;font-size:20px;margin: 10px;}
+.bloki p{font-size:16px;}
+/* КОНЕЦ - Базовые стили и классы */
+
+/* Базовые цвета всего */
+/* Внедрено пока не до конца */
+.cf{color:#5466DA;} /* Цвет шрифтов (color font) используемый для заголовков и важного текста */
+.md-content {background-color: #E3F4FA;} /* Основной цвет ФОНА */
+.c1,nav ul li, .md-content h3, .bt-menu-trigger span, .bt-menu-trigger span:before,.bt-menu-trigger span:after{/* Основной цвет сайта (фона) */
+background-color:#2CC6AB;/* Основной цвет сайта (фона) */
+background-image:-moz-linear-gradient(center bottom , #2cc6ab 70%, #2cd0b3 100%);/* Градиент основной цвет сайта переходящий во второстепенный */
+background-image:-webkit-linear-gradient(center bottom , #2cc6ab 70%, #2cd0b3 100%);/* Градиент основной цвет сайта переходящий во второстепенный */
+background-image:-o-linear-gradient(center bottom , #2cc6ab 70%, #2cd0b3 100%);/* Градиент основной цвет сайта переходящий во второстепенный */
+background-image:-ms-linear-gradient(center bottom , #2cc6ab 70%, #2cd0b3 100%);/* Градиент основной цвет сайта переходящий во второстепенный */
+background-image:linear-gradient(center bottom , #2cc6ab 70%, #2cd0b3 100%);/* Градиент основной цвет сайта переходящий во второстепенный */
+}
+.triangle{border-top:0.4em solid #2CC6AB;} /* Основной цвет (c1) сайта внедрённый в css фигуры */
+.triangle-right{border-left:50px solid #2CC6AB;} /* Основной цвет (c1) сайта внедрённый в css фигуры */
+.dropOut li:hover{border-color:#2CC6AB !important;} /* Основной цвет (c1) сайта внедрённый в css фигуры */
+.c1ts{text-shadow:0px -1px 0px #2CC6AB;color: #FFFFFF;} /* Первый основной цвет тени текста */
+.t1{border-bottom-color:#2CC6AB !important;}
+.tabs-style-linetriangle div li.tab-current a:before{border-top-color:#2CC6AB !important;}
+.tabs-style-linetriangle div li.tab-current a:after{border-top-color:#E3F4FA !important;}
+.tabs-style-linetriangle div a:first-child{border-bottom: 1px solid #2CC6AB}
+.c1bs{/* Первый основной цвет тени кнопок */
+-webkit-box-shadow:inset 0px 1px 0px #2CC6AB;/* Используется основной цвет сайта (фона) */
+box-shadow:inset 0px 1px 0px #2CC6AB;}
+.c1bs:hover{/* Первый основной цвет тени кнопок - hover */
+-webkit-box-shadow:inset 0px 1px 0px #aab9f4;box-shadow:inset 0px 1px 0px #aab9f4;}
+.c1bs:active{/* Первый основной цвет тени кнопок - active */
+-webkit-box-shadow:inset 0px 1px 0px #93a9e9;box-shadow:inset 0px 1px 0px #93a9e9;}
+.ci,#button{/* Цвет кнопок */
+background-color:#2CC6AB;
+background-image:-webkit-linear-gradient(bottom, #2CC6AB 0%, #7AF8BD 100%);
+background-image:-moz-linear-gradient(bottom, #2CC6AB 0%, #7AF8BD 100%);
+background-image:-o-linear-gradient(bottom, #2CC6AB 0%, #7AF8BD 100%);
+background-image:-ms-linear-gradient(bottom, #2CC6AB 0%, #7AF8BD 100%);
+background-image:linear-gradient(bottom, #2CC6AB 0%, #7AF8BD 100%);}
+.ci:hover,#button:hover{/* Цвет кнопок - hover */
+background-color:#5f73e9;
+background-image:-webkit-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+background-image:-moz-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+background-image:-o-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+background-image:-ms-linear-gradient(bottom, #5f73e9 0%, #859bef 100%);
+background-image:linear-gradient(bottom, #5f73e9 0%, #859bef 100%);}
+.ci:active,#button:active{/* Цвет кнопок - active */
+background-color:#7588e1;
+background-image:-webkit-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+background-image:-moz-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+background-image:-o-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+background-image:-ms-linear-gradient(bottom, #7588e1 0%, #7184df 100%);
+background-image:linear-gradient(bottom, #7588e1 0%, #7184df 100%);}
+/* КОНЕЦ - Базовые цвета всего */
+/* СТИЛИ КНОПОК */
+#formDiv input[type="button"]{width:290px;height:38px;} /* #sider input#sendButton, .uzko input, #calkuliktab input#sendButton, #formDiv input#sendButton */
+input[type="button"]{
+color:#fff;font-weight:bold;outline:none;width:290px;border:1px solid rgba(0, 0, 0, .49);-webkit-background-clip:padding-box;-moz-background-clip:padding-box;background-clip:padding-box;-webkit-transition:all .1s ease-in-out;-moz-transition:all .1s ease-in-out;-o-transition:all .1s ease-in-out;-ms-transition:all .1s ease-in-out;transition:all .1s ease-in-out;}
+.askbutt{color:#fff;width:100% !important;margin-top:15px;text-align:center;}
+/* КОНЕЦ - СТИЛИ КНОПОК */
+/* Стиль таблицы сравнений */
+.srvn{}
+.srvn td{width:50%;text-align:center;padding:10px;border:1px grey solid}
+.srvn td:nth-child(1){color:red;}
+.srvn td:nth-child(2){color:green;}
+.srvn tr:nth-child(2n){}
+.srvn tr:nth-child(1){font-weight:bold;}
+/* Стиль таблицы условий */
+.tus {width: 100%; border-collapse:collapse;margin:10px 0}
+.tus tr:nth-child(2n+1){background:none repeat scroll 0 0 #DBE1E0}
+.tus td {padding:20px}
+/* Всё что касается формы (собрано в одном месте для лучшей портабельности) */
+#mainForm, .zoo{width:300px;margin-top: 25px;}
+#fbnew select{margin:3px 9px}
+select#birthDay{width:76px !important;}
+select#birthMonth{width:88px !important;padding-left: 0;}
+select#birthYear{width:115px !important;}
+#mainForm select#city option{color:black;font-size:14px}
+#mainForm div{width:100%;text-align:center;height:18px;margin:3px 0;}
+#mainForm div span{font-size:13px;color:red}
+#tip span,#tips span{color:green !important}
+#error_php{color:red !important;}
+#error_php_INN{margin:20px 0;display:inline-block;}
+input.error,select.error,textarea.error{color:red !important;border:1px solid red !important;}
+#bt-menu select{display:none}
+#fbtform p{text-indent:0px;margin:5px 10px 0 10px;font-size:10px;}
+#sider select, .uzko select, #calkuliktab select, #formDiv select, #fbtform select{width:290px;}
+#fbtform select {margin: 3px 5px;}
+input[type="text"],input[type="tel"],input[type="email"],#sider textarea, #formDiv textarea{width:290px;}
+#calkuliktab select, #calkuliktab input#sendButton{max-width:270px;min-width:200px;width:100%;}
+#calkuliktab select{font-size:15px}
+#calkuliktab option[value="minus"],#calkuliktab option[value="plus"]{display:none}
+#formDiv option[value="minus"],#formDiv option[value="plus"]{display:none}
+#feedback{float:right;height:20px;text-align:center;font-weight:bold;margin:10px 30px 0 0}
+#news{float:left;height:20px;width:200px;text-align:center;font-weight:bold;margin-top:10px}
+#dearly{float:right;height:20px;text-align:center;font-weight:bold;margin-top:10px;margin-right:15%}
+#login{width:450px !important}
+#login input{width:120px;border:2px solid gray;margin:0;padding:3px;color:gray;margin:7px 7px 0 0}
+#login input#SendLogin{background-color:limegreen;border:1px solid gray;color:white;font-weight:bold;}
+#login input#SendLogin:hover{background-color:green;}
+#wmu{width:270px !important}
+#wmu img, #wmu input{margin-top:7px;}
+.tableza td{padding:4px;}
+.tableza input{margin:2px 5px}
+#calkuliktab{width:95%;margin:30px 0;}
+#calkuliktab td{padding:3px;border-bottom:1px gray dashed;border-top:1px gray dashed;}
+.calk_dopinfo{clear:both;text-align:center}
+why_it_is_beneficial{clear:both;margin:30px 30px 10px}
+#region_ru option{margin-left:10px;font-size:12px}
+#region,#money{height:100% !important}
+input[type='checkbox']{width:13px;padding:0px;margin:7px;border:0;height:13px;}
+#unsubscribe select{padding:0 !important;width:150px !important;margin-top:2px;font-size: 14px;}
+#unsubscribe{margin-top:15px}
+/* КОНЕЦ всего что касается форм */
+/* Всё что касается ответов на заявку */
+/* КОНЕЦ - Всего что касается ответов на заявку */
+/* Стили сворачивания выпадающих списков accordion-group */
+.fade {opacity: 0;-webkit-transition: opacity 0.15s linear;-o-transition: opacity 0.15s linear;transition: opacity 0.15s linear;}
+.collapsing {position: relative;height: 0;overflow: hidden;-webkit-transition-property: height, visibility;-o-transition-property: height, visibility;transition-property: height, visibility;-webkit-transition-duration: 0.35s;-o-transition-duration: 0.35s;transition-duration: 0.35s;-webkit-transition-timing-function: ease;-o-transition-timing-function: ease;transition-timing-function: ease;}
+/* фигуры, текст в них и украшательства фигур */
+.parallelogram{width:150px;height:100px;-webkit-transform:skew(20deg);-moz-transform:skew(20deg);-o-transform:skew(20deg);display:block;}
+.trapezoid_right{border-bottom:30px solid;border-right:10px solid transparent;height:0;display:block;}
+.trapezoid_left{border-bottom:30px solid;border-left:10px solid transparent;height:0;display:block;}
+.trapezoid_left h2,.trapezoid_right h2{padding:4px;display:block;margin:0;text-align:center;}
+.t1{width:260px !important;margin:0 0 0 25px !important;}
+.t2{border-bottom-color:#7af8bd !important;width:290px !important;margin:0 0 15px 35px !important;}
+.t3{border-bottom-color:#7af8bd !important;width:290px !important;margin:0 10px 15px 0 !important;}
+.shadow_left_bottom{position:relative;box-shadow:-4px 7px 5px rgba(0, 0, 0, 0.18);-moz-box-shadow:-4px 7px 5px rgba(0, 0, 0, 0.18);-webkit-box-shadow:-4px 7px 5px rgba(0, 0, 0, 0.18);}
+.shadow_right_bottom{position:relative;box-shadow:4px 7px 5px rgba(0, 0, 0, 0.18);-moz-box-shadow:4px 7px 5px rgba(0, 0, 0, 0.18);-webkit-box-shadow:4px 7px 5px rgba(0, 0, 0, 0.18);}
+.triangle-right{width:0;height:0;border-top:25px solid transparent;border-bottom:25px solid transparent;}
+/* КОНЕЦ - фигуры, текст в них и украшательства фигур */
+/* collapse - разворачивающиеся ответы на вопросы, используется вместе с bootstrap.js */
+.collapse{position:relative;height:0;overflow:hidden;-webkit-transition:height 0.35s ease;-moz-transition:height 0.35s ease;-o-transition:height 0.35s ease;transition:height 0.35s ease;}
+.collapse.in{height:auto;}
+.accordion{margin-bottom:20px;}
+.accordion-group{border:1px solid rgba(0, 0, 0, 0.49);margin:10px;width:calc(100% - 15px);}
+.accordion-heading{border-bottom:0;}
+.accordion-heading .accordion-toggle{display:block;padding:11px 15px;background-color:#6fefd7;color:#0F1F94;text-decoration:none;font-weight:bold;}
+.askifobl{background-color:#bed445 !important;}
+.accordion-toggle{cursor:pointer;}
+.accordion-inner p{margin-bottom:10px}
+/* КОНЕЦ collapse - разворачивающиеся ответы на вопросы, используется вместе с bootstrap.js */
+/* красивые чекбоксы и радиокнопки */
+/* Cначала обозначаем стили для IE8 и более старых версий т.е. здесь мы немного облагораживаем стандартный чекбокс. */
+.checkbox{vertical-align:top;margin:0 3px 0 0;width:17px;height:17px;}
+/* Это для всех браузеров, кроме совсем старых, которые не поддерживают селекторы с плюсом. Показываем, что label кликабелен. */
+.checkbox + label{cursor:pointer;}
+/* Далее идет оформление чекбокса в современных браузерах, а также IE9 и выше. Благодаря тому, что старые браузеры не поддерживают селекторы :not и :checked, в них все нижеследующие стили просто не сработают. */  
+/* Прячем оригинальный чекбокс. */
+.checkbox:not(checked){position:absolute !important;opacity:0;}
+.checkbox:not(checked) + label{
+position:relative; /* будем позиционировать псевдочекбокс относительно label */
+padding:0 0 0 60px;}/* оставляем слева от label место под псевдочекбокс */
+/* Оформление первой части чекбокса в выключенном состоянии (фон). */
+.checkbox:not(checked) + label:before{content:'';position:absolute;top:-4px;left:0;width:50px;height:26px;border-radius:13px;background:#CDD1DA;box-shadow:inset 0 2px 3px rgba(0,0,0,.2);}
+/* Оформление второй части чекбокса в выключенном состоянии (переключатель). */  
+.checkbox:not(checked) + label:after{content:'';position:absolute;top:-2px;left:2px;width:22px;height:22px;border-radius:10px;background:#FFF;box-shadow:0 2px 5px rgba(0,0,0,.3);transition:all .2s;}
+/* Меняем фон чекбокса, когда он включен. */  
+.checkbox:checked + label:before{background:#9FD468;}
+/* Сдвигаем переключатель чекбокса, когда он включен. */  
+.checkbox:checked + label:after{left:26px;}
+/* Показываем получение фокуса. */  
+.checkbox:focus + label:before{box-shadow:0 0 0 3px rgba(255,255,0,.5);}
+
+/* Стили для карточек офферов */
+.notice{max-width: 599px; border:1px solid gray;margin-bottom:15px}
+.notice td{font-size:12px}
+.notice td .one{width:154px;}
+.notice td .two{width:445px; font-size:11px; text-align:justify; vertical-align:top; padding:4px 2px 2px 2px;}
+.notice td .three{height:45px; max-height:45px}
+.notice form {}
+.notice select{width:360px; margin:10px 6px 10px 12px;}
+.notice input{width:50px; color:green; font-size:14px; margin:10px 3px; height:30px}
+.notice img{width:150px; height:50px; margin:4px}
+.notice .su{width:50px; float:left; border-right:1px solid grey; margin:3px}
+.notice .sur{width:95px; float: right; margin:3px}
+.notice .sr{width:50px; float:left; border-right:1px solid grey; margin:3px}
+.notice .srr{width:95px; float: right; margin:3px}
+.noticealert{border-bottom:1px solid gray;font-size:11px;padding:3px; text-align:center;}
+
+/* Стили ОКОШКА идентифицированного юзера */
+.top #identuser{margin:0 !important;box-shadow:none !important;}
+.top #identuser li{border:none !important;height:40px;}
+#identuser li{height:42px;background:none repeat scroll 0 0 rgba(255, 255, 255, 0.5) !important}
+#identuser ul{display:block !important}
+li.drop{padding:2px !important}
+#identuser{width:290px;margin:10px 0 18px;}
+.user-avatar img{-moz-border-radius:4em / 4em;-webkit-border-radius:4em 4em;border-radius:4em / 4em;float:left;margin-left:2px;margin-top:0.1em;}
+.icon-reorder{color:#FFFFFF;float:right;margin:-2px;padding:20px;}
+.drop{position:relative;font-size:1em;cursor:pointer;}
+.drop a{line-height:2.4em;color:#4d4d4d !important;text-decoration:none;width:50%;overflow:hidden;white-space:nowrap;word-wrap:normal;font-size:14px;text-overflow:clip;display:block;width:71%;float:left;padding-left:4px;}
+.triangle{width:0;top:38px;height:0;position:absolute;border-left:.4em solid transparent;border-right:.4em solid transparent;border-top:.4em solid #2CC6AB;left:265px;opacity:0;margin-top:2px;}
+.dropdownContain{width:110px;position:absolute;z-index:2;left:180px;top:-310px;}
+.dropOut{width:110px;background:#f6f6f6;float:left;position:relative;margin-top:0;opacity:0;box-shadow:0 0 4px rgba(0, 0, 0, 0.15);border:1px solid rgba(255, 255, 255, 0.75);overflow:hidden;transition:all 0.1s ease-out;}
+.dropOut ul{padding:.3em 0;margin:0;border:1px solid #808080;}
+.dropOut li{text-align:left;width:100%;padding:0.6em 0;color:gray;background-color:#F6F6F6 !important;background-image:-moz-linear-gradient(center bottom , #F6F6F6 70%, #F6F6F6 100%) !important;border-left:3px solid #f7f7f7 !important;transition:all 0.1s ease-out;box-shadow:none !important;}
+.dropOut li span{color:#cccccc;margin:0 1.5em 0 .8em;}
+.dropOut li:hover{color:#4d4d4d !important;background:#ededed !important;}
+.dropOut li:hover span{color:gray;}
+ul li:hover .triangle{opacity:1;}
+ul li:hover .dropdownContain{top:40px;}
+ul li:hover .dropOut{opacity:1;margin-top:20px;}
+.hamburger{position:relative;font-size:10px;width:3.3em;height:3.3em;}
+.hamburger:before{border-top:0.5em solid #efefef;content:"";position:absolute;width:3em;height:2.7em;margin:auto;border-bottom:0.5em solid #efefef;top:.6em;left:.6em;}
+.hamburger:after{display:block;content:"";position:absolute;top:1.7em;width:3em;height:.5em;background:#efefef;left:.6em;}
+/* Конец стилей ОКОШКА идентифицированного юзера */
+
+
+/* СТИЛИ ШУТКИ "УСКОРИТЬ ОПЕРАТОРА" */
+#button{cursor:pointer!important}
+.hide{display:none}
+.restart .anime-image{height:238px;position:relative;margin-right:238px;}
+.restart .anime-image img{position:absolute}
+.restart .anime-image img#image1{z-index:1}
+.restart .anime-image img#image2{z-index:2}
+.restart .anime-image img#image3{z-index:3}
+.restart .anime-image img.hidden{display:none}
+.restart .button img.hidden{display:none}
+/* START General styles for the modal */
+.md-perspective,.md-perspective body{height:100%;overflow:hidden;}
+.md-perspective body{background:#222;-webkit-perspective:600px;-moz-perspective:600px;perspective:600px;}
+.container{background:#e74c3c;min-height:100%;}
+.md-modal{position:fixed;top:50%;left:50%;width:50%;max-width:630px;min-width:320px;height:auto;z-index:2000;visibility:hidden;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden;transform:translateX(-50%) translateY(-50%);}
+.md-show{visibility:visible;}
+.md-overlay{position:fixed;width:100%;height:100%;visibility:hidden;top:0;left:0;z-index:1000;opacity:0;background:rgba(163,163,163,0.8);transition:all 0.3s;}
+.md-show ~ .md-overlay{opacity:1;visibility:visible;}
+.md-content{position:relative;margin:0 auto;}
+.md-content h3{color:#fff;margin:0;padding:0.4em;text-align:center;font-size:2.4em;font-weight:300;opacity:0.8;}
+.md-content > div{padding:15px 40px 30px;margin:0;font-weight:300;font-size:1.15em;}
+.md-content > div p{margin:0;padding:10px 0;}
+.md-content > div ul{margin:0;padding:0 0 30px 20px;}
+.md-content > div ul li{padding:5px 0;}
+.md-content button{display:block;margin:0 auto;font-size:0.8em;}
+/* Individual modal styles with animations/transitions */
+.md-show.md-effect-1 ~ .container{height:100%;overflow:hidden;}
+.md-show.md-effect-1 ~ .md-overlay{
+ -webkit-transition:all 0.5s;
+ -moz-transition:all 0.5s;
+ transition:all 0.5s;
+}
+.md-show.md-effect-1 ~ .container,
+.md-show.md-effect-1 ~ .md-overlay{
+ transform-style:preserve-3d;
+ transform-origin:50% 100%;
+ animation:OpenTop 0.5s forwards ease-in;
+}
+@-webkit-keyframes OpenTop{
+ 50%{
+  -webkit-transform:rotateX(10deg);
+  -webkit-animation-timing-function:ease-out;
+ }
+}
+@-moz-keyframes OpenTop{
+ 50%{
+  -moz-transform:rotateX(10deg);
+  -moz-animation-timing-function:ease-out;
+ }
+}
+@keyframes OpenTop{50%{transform:rotateX(10deg);animation-timing-function:ease-out;}}
+.md-effect-1 .md-content{
+ -webkit-transform:translateY(-200%);
+ -moz-transform:translateY(-200%);
+ -ms-transform:translateY(-200%);
+ transform:translateY(-200%);
+ opacity:0;}
+.md-show.md-effect-1 .md-content{
+ -webkit-transform:translateY(0);
+ -moz-transform:translateY(0);
+ -ms-transform:translateY(0);
+ transform:translateY(0);
+ opacity:1;
+ transition:all 0.5s 0.1s;}
+@media screen and (max-width:32em){body{font-size:75%;}}
+/* END General styles for the modal */
+
+
+/* tab style */
+.tabs{position:relative;overflow:hidden;margin:0 auto;width:100%;font-weight:300;font-size:1.25em;}
+.tabs div{text-align:center;}
+.tabs div ul{position:relative;display:-ms-flexbox;display:-webkit-flex;display:-moz-flex;display:-ms-flex;display:flex;margin:0 auto;padding:0;max-width:1200px;list-style:none;
+	-ms-box-orient:horizontal;
+	-ms-box-pack:center;
+	-webkit-flex-flow:row wrap;
+	-moz-flex-flow:row wrap;
+	-ms-flex-flow:row wrap;
+	flex-flow:row wrap;
+	-webkit-justify-content:center;
+	-moz-justify-content:center;
+	-ms-justify-content:center;
+	justify-content:center;}
+.tabs div ul li{position:relative;z-index:1;display:block;margin:0;text-align:center;-webkit-flex:1;-moz-flex:1;-ms-flex:1;flex:1;}
+.tabs div a:first-child{position:relative;display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;line-height:2.5;}
+.tabs div a span{vertical-align:middle;font-size:0.75em;}
+.tabs div li.tab-current a{color:#74777b;}
+.tabs div a:focus{outline:none;}
+.content-wrap{position:relative;}
+.content-wrap section{min-height:300px;display:none;margin:0 auto;padding:1em;max-width:1200px;text-align:center;}
+.content-wrap section.content-current{display:block;}
+.no-js .content-wrap section{display:block;padding-bottom:2em;border-bottom:1px solid rgba(255,255,255,0.6);}
+.no-flexbox div ul{display:block;}
+.no-flexbox div ul li{min-width:15%;display:inline-block;}
+@media screen and (max-width:58em){
+.tabs div a.icon span{display:none;}
+.tabs div a:before{margin-right:0;}
+}
+.tabs-style-linetriangle div a:first-child{overflow:visible;-webkit-transition:color 0.2s;transition:color 0.2s;}
+.tabs-style-linetriangle div a span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:1em;}
+.tabs-style-linetriangle div li.tab-current a:after, .tabs-style-linetriangle div li.tab-current a:before{position:absolute;top:100%;left:50%;width:0;height:0;border:solid transparent;content:'';pointer-events:none;}
+.tabs-style-linetriangle div li.tab-current a:after{margin-left:-10px;border-width:10px;}
+.tabs-style-linetriangle div li.tab-current a:before{margin-left:-11px;border-width:11px;border-top-color:rgba(0,0,0,0.2);}
+@media screen and (max-width:58em){.tabs-style-linetriangle div{font-size:0.6em;}}
+/* For beaty form */
+.contact {max-width: 467px;min-width: 320px;margin: 0 auto;background: rgba(255,255,255,0.9);box-shadow: 0 0 8px rgba(0,0,0,.3);}
+.contact * {outline: none;border: 0;background: none;}
+form fieldset {display: block;padding: 25px 30px;}
+form .row {margin: 0 -15px;}
+form .col-2 {width: 50%;}
+form .col {float: left;min-height: 1px;padding-right: 15px;padding-left: 15px;box-sizing: border-box;-moz-box-sizing: border-box;}
+form .row:after {content: '';display: table;clear: both;}
+form section {margin-bottom: 20px;}
+form .input, form .textarea, form .radio, form .checkbox, form .button {position: relative;display: block;}
+form .fa-append {color: #CCC;font-size: 20px;line-height: 30px;padding-left: 3px;position: absolute;right: 8px;text-align: center;top: 1px;width: 25px;font-style:normal}
+.fa {display: inline-block;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+.fa-fio:before {content: "🙋";}
+.fa-email:before {content: "✉";}
+.fa-phone:before {content: "☎";}
+.fa-comment:before {content: "";}
+.fa-inn:before {content: "Ⓘ";}
+form .input .fa-append + input, form .textarea .fa-append + textarea {padding-right: 46px;}
+form .input input, form .textarea textarea {display: block;appearance: normal;-moz-appearance: none;-webkit-appearance: none;}
+form .textarea textarea {height: auto;resize: none;overflow:auto;}
+form .input:hover input,form .textarea:hover textarea,form .checkbox:hover i {border-color: #00BDAB;}
+form .input input:focus,
+form .textarea textarea:focus,
+form .checkbox input:focus + i {border-color: #009688;}
+form .button {float: right;height: 39px;overflow: hidden;margin-left: 20px;padding: 0 20px;outline: none;border: 0;background-color: #009688;text-decoration: none;color: #fff;cursor: pointer;opacity: 0.8;}
+form .button:hover {opacity: 1;}
+@media screen and (max-width: 470px){.col, .col-2 { float: none !important; width: 100% !important;}}
+/* лодер на css <div class="loader">Loading...</div> */
+.loader {font-size: 90px;text-indent: -9999em;overflow: hidden;width: 1em;height: 1em;border-radius: 50%;margin: 62px auto;position: relative;-webkit-transform: translateZ(0); -ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: load6 1.7s infinite ease;animation: load6 1.7s infinite ease;}
+@-webkit-keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.087em -0.825em 0 -0.42em #ffffff, -0.173em -0.812em 0 -0.44em #ffffff, -0.256em -0.789em 0 -0.46em #ffffff, -0.297em -0.775em 0 -0.477em #ffffff;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.338em -0.758em 0 -0.42em #ffffff, -0.555em -0.617em 0 -0.44em #ffffff, -0.671em -0.488em 0 -0.46em #ffffff, -0.749em -0.34em 0 -0.477em #ffffff;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.377em -0.74em 0 -0.42em #ffffff, -0.645em -0.522em 0 -0.44em #ffffff, -0.775em -0.297em 0 -0.46em #ffffff, -0.82em -0.09em 0 -0.477em #ffffff;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+}
+@keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+  5%,
+  95% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+  10%,
+  59% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.087em -0.825em 0 -0.42em #ffffff, -0.173em -0.812em 0 -0.44em #ffffff, -0.256em -0.789em 0 -0.46em #ffffff, -0.297em -0.775em 0 -0.477em #ffffff;
+  }
+  20% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.338em -0.758em 0 -0.42em #ffffff, -0.555em -0.617em 0 -0.44em #ffffff, -0.671em -0.488em 0 -0.46em #ffffff, -0.749em -0.34em 0 -0.477em #ffffff;
+  }
+  38% {
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, -0.377em -0.74em 0 -0.42em #ffffff, -0.645em -0.522em 0 -0.44em #ffffff, -0.775em -0.297em 0 -0.46em #ffffff, -0.82em -0.09em 0 -0.477em #ffffff;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 -0.83em 0 -0.4em #ffffff, 0 -0.83em 0 -0.42em #ffffff, 0 -0.83em 0 -0.44em #ffffff, 0 -0.83em 0 -0.46em #ffffff, 0 -0.83em 0 -0.477em #ffffff;
+  }
+}

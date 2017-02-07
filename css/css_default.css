@@ -1,0 +1,191 @@
+﻿@media screen and (min-width: 1170px) {
+#sider{width:26% !important;}
+#sidel{width:74% !important;}
+}
+@media screen and (max-width: 1395px) {
+#sider{width:30% !important;}
+#sidel{width:70% !important;}
+.bloki{width:400px;height:170px;padding-left: 70px;margin:7px}
+.imginbloki{width:65px}
+.bloki h3{font-size:16px;margin:7px;}
+.bloki p{font-size:14px;}
+}
+@media screen and (max-width: 1280px) {
+#sider{width:33% !important;}
+#sidel{width:67% !important;}
+.bloki{width:330px;}
+.bloki h3{font-size:15px;margin:6px;}
+.bloki p{font-size:12px;}
+}
+@media screen and (max-width: 1100px) {
+#sider{width:39% !important;}
+#sidel{width:61% !important;}
+.bloki{width:530px;height:150px;padding-left: 100px;}
+.imginbloki{width:95px}
+.bloki h3{font-size:16px;margin:6px;}
+.bloki p{font-size:14px;}
+#zgd,.syear,.bzlg{display:none}
+}
+@media screen and (min-width: 1400px) {
+#sidec{margin-right:8% !important;}
+}
+@media screen and (min-width: 1500px) {
+#sider{width:32% !important;}
+#sidel{width:68% !important;}
+}
+@media screen and (min-width: 1880px) {
+#sider{width:21% !important;}
+#sidel{width:79% !important;}
+}
+@media screen and (max-width: 1200px) {
+#sidec, .active,.home #home,.fb #sotr,.calculator #calkul,.anticollektor #antico,.ask #ask,.usloviya #usloviya,.for_whom_it #for, .akciya #akciya {display:none !important;}
+#konson {width:150px !important;max-width:150px !important;min-width:150px !important;}
+#fbblok {width:calc(100% - 150px) !important;}
+#konson img,#konson div {width:150px !important;}
+.md-content h3{font-size:26px !important}
+}
+
+@media screen and (max-width: 1000px) {
+.logo h1{font-size: 14px !important;text-shadow: 1px 2px 2px #000000, 0 0 0.2em #008000;line-height: 28px;}
+#sotr a span {line-height: 17px !important;padding: 3px 9px !important;width: 105px !important;}
+.accordion-group {width:96% !important;}
+table.uslov {width:98% !important; min-width:310px}
+#konson{display:none !important;}
+#fbblok {width:100% !important;}
+.bloki{float:none; margin-right:40px}
+#sidel{margin-top:30px}
+
+
+}
+@media screen and (max-width: 928px) {
+#sider,#sidel,#sidec,#sideb,.fn {float:none !important;width:100% !important; min-width:300px !important;}
+.fn {height: 70px !important;}
+.t2,.t1,.t3{border: 0 none !important;height: 25px !important;margin: 0 !important;box-shadow: none !important;width: 100% !important;}
+.beneficialhide,.beneficialplustwo{display:none !important;}
+.logo h1{display:none !important;}
+.rght,.beneficial td {padding: 2px !important;}
+#nokodno div,#nokodno input {clear:both;float:none !important}
+.md-content h3{font-size:20px !important}
+}
+@media screen and (max-width: 800px) {
+#konson {display:none !important;}
+#fbform{width: 50% !important;}
+#fbtips{width: 50% !important;}
+}
+@media screen and (min-width: 690px) {
+.headmenu select {display: none}
+}
+@media screen and (max-width: 690px) {
+.headmenu div {display: none !important;}
+.headmenu select {display: block !important;}
+.beneficialplus{width:25% !important;}
+#feedback,#dearly {font-size:12px !important;margin-right:15px !important}
+#sidel p {text-indent: 1px !important}
+.vmestologo {font-size:14px !important}
+.headmenu {padding-right: 50%;}
+nav select{margin-left: 26% !important;position: absolute;margin-right: 0px !important;}
+#sideb,#fbform,#fbtips,.bloki{width:100% !important;}
+.bloki{height:100%;padding-left: 70px;margin-top:35px}
+.imginbloki{width:65px}
+}
+@media screen and (max-width: 590px) {
+nav select {margin:0 !important;width:100% !important;}
+#slider-wrapper,#dearly{display:none !important;}
+.maininfo {width:100% !important}
+#sidel {margin-top:0 !important; height:100% !important}
+#sidel p {margin-left:12px !important}
+table.uslov td {font-size:10px !important;}
+}
+@media screen and (max-width: 530px) {
+table.uslov img,#calkul,#adaptiv,.uslov td span,.beneficial td span {display: none !important;}
+#feedback,#dearly {font-size:12px !important;margin:0 8px !important}
+.cont{font-size:8px !important;}
+#dearly {float: left !important;}
+.maininfo p {margin:5px 20px 5px 5px !important;}
+.beneficial td span.red {display: block !important;}
+table.uslov td {padding-left:3px !important;padding-right:3px !important;}
+
+}
+
+@media screen and (max-width: 320px) {
+#sider {float: none !important; margin:0 5px !important;width: 230px!important;}
+#dearly {margin-top:7px !important;}
+#dearly br {display: block !important;}
+.btn3 {font-size:12px !important;width: 240px !important;}
+}
+
+
+/* ГЛОБАЛЬНЫЕ */
+.rd {width:1px; background-color: #2ed7b9; background-image:-moz-linear-gradient(center bottom , #2ed7b9 70%, #2dd7b9 100%);}
+.container{min-height:100%;background-color:#E3F4FA;overflow: hidden;}
+#footer{height:80px;position: relative; margin-top: -82px;width:100%}
+#ask center{margin-bottom:80px}
+table.uslov {width:980px}
+table.uslov td {width:20%;border: 1px solid #808080; text-align:center; padding:5px}
+table.innov {width:980px}
+table.innov td {width:140px;border: 1px solid #808080; text-align:center; padding:5px}
+table.innov td.mini {width:70px;}
+table.beneficial td {border: 1px solid #808080; text-align:center; padding:5px}
+
+.headmenu {width:100%; height: 40px; font-size:13px;}
+.headmenu,#footer{
+-webkit-box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.7);
+-moz-box-shadow:    0px 0px 6px 0px rgba(50, 50, 50, 0.7);
+box-shadow:         0px 0px 6px 0px rgba(50, 50, 50, 0.7);
+}
+.headmenu div {float:right;height:40px; text-align:center; display:block; border:0;}
+.headmenu div a,.md-content h3 { text-decoration:none; text-shadow: 1px 1px 2px black, 0 0 0.2em green;}
+.headmenu div a span { display:block; text-align:center; color:white;padding:9px;height: 100%;}
+.active,.headmenu div a span:hover {background-color: #32a691; background-image:-moz-linear-gradient(center bottom , #32a691 70%, #2cd0b3 100%)}
+.logo{float:left;padding-right:5px}
+
+/* Ниже стили отвечающие за выделение активного пункта меню исходя из того на какой странице находимся */
+.active,.home #home,.fb #sotr,.calculator #calkul,.anticollektor #antico,.ask #ask,.usloviya #usloviya,.for_whom_it #for, .akciya #akciya
+{pointer-events: none;background-color: #32a691; background-image:-moz-linear-gradient(center bottom , #32a691 70%, #2cd0b3 100%)}
+.ask #ask,.akciya #akciya{pointer-events: visible !important}
+
+
+#contact {width:85px;line-height:30px;}
+#calkul {width:120px}
+#antico {width:157px;}
+#antico a span, #calkul a span {line-height: 17px;padding: 3px 9px;}
+
+
+
+#opezdaloch select {width: 100%; font-size:18px; padding:7px}
+#opezdaloch select option {padding-top:2px}
+
+
+
+
+/* выпадающее меню */
+nav ul,nav li,nav ul li a {z-index:9999;position: relative;}
+nav ul {
+	list-style: none;
+	display:none
+	}
+nav ul li {
+	float: none;
+	position: relative;
+	margin: 0;
+	text-align: center;
+	display: block;
+	box-shadow: 1px 1px 2px #000000, 0 0 0.2em #008000;
+	-webkit-transition:0.25s linear opacity;
+	border-radius:3px;
+	}
+#ask li a,#akciya li a{
+line-height: 40px;
+color:white;
+margin-top: -3px;
+text-shadow: 1px 1px 2px #000000, 0 0 0.2em #008000 !important;
+display: block;
+position: relative;
+}
+#ask:hover ul,#akciya:hover ul {
+	display: block;
+	transform: scale(0.99);
+	}
+#ask li:hover,#akciya li:hover {
+transform: scale(1.2);
+	}

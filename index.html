@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html><head>
+	
+	<!-- настройки кеширования -->
+	<META HTTP-EQUIV="expires" CONTENT="Wed, 20 Jul 2025 08:21:57 GMT">
+	<meta http-equiv="Cache-Control" content="public"> <!-- разрешение кэширования во всех случаях -->
+	<!-- for mobile -->
+	<!-- убираем масштабирование -->
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+	<meta name="HandheldFriendly" content="True"/>
+	<!-- Mobile Internet Explorer позволяет принудительно активировать технологию ClearType для сглаживания шрифтов -->
+	<meta http-equiv="cleartype" content="on"/>
+	<!-- for Apple -->
+	<link rel="apple-touch-startup-image" href="//fincred.org/img/icon/touch-icon-iphone3.png">
+	<link rel="apple-touch-icon" href="//fincred.org/img/icon/touch-icon-iphone3.png">
+	<link rel="apple-touch-icon" sizes="72×72" href="//fincred.org/img/icon/touch-icon-ipad3.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="//fincred.org/img/icon/touch-icon-ipad-retina3.png">
+	<!-- Этот мета-тег необходим для того, чтобы приложение открылось в полноэкранном режиме -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<!-- корректируем верхнюю полоску в iPhone -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<!-- Манифест для сайта позволяющий настроить какая будет иконка сайта добавленного на рабочий стол, а также регулирующий то как будет отображаться сайт -->
+	<link rel="manifest" href="manifest.json">
+	<!-- for Win8 -->
+	<meta name="msapplication-TileColor" content="000">
+	<meta name="msapplication-TileImage" content="//fincred.org/img/icon/Win8_3.png">
+	<meta name="application-name" content="Title"> 
+	<meta name="msapplication-tooltip" content="Description">
+	<!-- end ALL mobile -->
+	<!-- цвет в который окрасится мобильный хром -->
+	<meta name="theme-color" content="#E3F4FA">
+		
+    <!-- Просим браузеры переключиться в последний режим -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!-- Отключаем панель работы с изображениями -->
+    <meta http-equiv="imagetoolbar" content="no">
+    <!-- Cтрокой ниже просим IE не показывать нам табличку про то, что скрипты опасны и т.д. и т.п., а просто брать и включать JS -->
+    <!-- saved from url=(0014)about:internet -->
+    
+    <!-- НИЖЕ теги для соц.сетей, помогающие создавать красивые превьюшки сайтов -->
+    <!-- for FB and VK -->
+    <meta property="og:title" content="Кредит от инвестора">
+	<meta property="og:description" content="Кредиты наличными БЕЗ залога от частных инвесторов. Реально даже с плохой кредитной историей. Не нужно подтвержать доход!">
+	<meta property="og:image" content="//fincred.org//img/kreditiy_posrednik_broker.png">
+	<meta property="og:url" content="//fincred.org/">
+	<meta property="og:site_name" content="Кредит от инвестора">
+	<meta property="og:see_also" content="//fincred.org/">
+	<!-- for G+ -->
+    <meta itemprop="name" content="Кредит от инвестора">
+	<meta itemprop="description" content="Кредиты наличными БЕЗ залога от частных инвесторов. Реально даже с плохой кредитной историей. Не нужно подтвержать доход!">
+	<meta itemprop="image" content="//fincred.org//img/kreditiy_posrednik_broker.png">
+	<!-- есть ещё теги для твитера, а также теги позволяющие создать карточку сайта с картой для гугл карт, но в этом проекте всё это не актуально -->
+    <!-- КОНЕЦ тегов для соц.сетей, помогающих создавать красивые превьюшки сайтов -->
+    
+    <meta name="author" content="Laziness">
+	<meta name="copyright" content="Laziness (c)">
+
+    <!-- увы ниже не смогу использовать стандартную общепринятую ссылку href="/favicon.ico" ввиду реализации многосайтовости -->
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+	<meta content="ru" http-equiv="Content-Language">
+	<meta content="max-age=259200, must-revalidate" http-equiv="Cache-Control">
+	<!-- защищаем контент от копирования. Часть которая вставляется в хедер -->
+	<script type="text/javascript">
+		function disableSelection(target) {
+			if (typeof target.onselectstart!="undefined"){
+				target.onselectstart=function(){return false}
+			}
+			else if (typeof target.style.MozUserSelect!="undefined") {
+				target.style.MozUserSelect="none"
+			} else {
+				target.onmousedown=function(){return false};
+				target.style.cursor = "default"}
+		}
+	</script>
+
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<meta name="description" content="Кредиты наличными без залога от частного ивестора. Без предоплат, даже если плохая кредитная история">
+    <link href="css/base.css" type="text/css" rel="stylesheet">
+    <link href="css/css_default.css" type="text/css" rel="stylesheet">
+    <!-- в связи с требованием корпорации добра - пришлось добавить стиль ниже -->
+	<style type="text/css">.collapse{height: 100% !important;}</style>
+
+<title>Кредиты от частного инвестора без залога и без справок. Кредиты на донора</title>
+</head><body id="index" oncopy="return false;" onload="start();">
+<!-- start модальное всплывающее окно -->
+<div class="md-modal md-effect-1" id="modal-1"><div class="md-content">
+<h3>Модальные окна</h3>
+<div><p> Это модальное окно. Вы можете выполнять следующие действия с ним:</p>
+<ul>
+<li><strong>Читать:</strong> модальные окна, вероятно, несут важную текстовую информацию, так что не забудьте прочитать то, что в них написано.</li>
+<li><strong>Смотреть:</strong> модальные окна несут визуальную информацию, на которую приятно смотреть.</li>
+<li><strong>Закрыть:</strong> нажмите на кнопку, чтобы закрыть модальное окно.</li>
+</ul>
+<button class="md-close">Закрыть!</button>
+</div></div></div><div class="md-overlay"></div>
+<!-- end модальное всплывающее окно -->
+<!-- <button class="md-trigger md-setperspective" data-modal="modal-1">ОТКРЫТЬ МОДАЛЬНОЕ ОКНО</button> -->
+
+
+
+<div class="container">
+
+<div class="top" class="c1">
+<div class="logo"><h1>Кредиты от инвесторов</h1></div>
+<nav class="c1 headmenu home" id="bt-menu">
+	<center>
+<!-- <div><a href="#"><span class="md-trigger md-setperspective" data-modal="modal-3">Личный кабинет</span></a></div><div class="rd"></div> -->
+	<div id="sotr"><a href="fb.php" rel="prefetch"><span title="Служба поддержки. Контакты">Служба поддержки</span></a></div>
+	<div class="rd"></div>
+	<div id="calkul"><a href="calculator.php" rel="prefetch"><span title="Гарантийный платеж">Гарантийный платеж</span></a></div>
+    <div class="rd"></div>
+
+<div id="ask"><a href="ask.php"><span title="Ответы на вопросы по кредитному донорству">Вопросы и ответы</span></a>
+<ul>
+	<li><a href="ask.php" title="">Общие вопросы</a></li>
+	<li><a href="usloviya.php" title="">Наши условия</a></li>
+	<li><a href="reliability_rating.php" title="Подробности про нашу рейтинговую систему надёжности заёмщика" style="font-family: arial;font-size: 14px;text-shadow:0 1px 1px #000000, 0 0 0.2em #008000 !important">Рейтинг заёмщика</a></li>
+	<li><a href="for_whom_it.php" title="">Для кого</a></li>
+	<li><a href="why_it_is_beneficial.php" title="Несмотря на довольно высокую донорскую комиссию, тем не менее наши условия выгоднее большинства кредитных предложений на рынке кредитования!">Дорого? Нет!</a></li>
+	<li><a href="about.php" title="">О нас</a></li>
+</ul>
+</div>
+
+<div class="rd"></div>
+
+<div id="akciya"><a href="akciya.php"><span title="Перечень наших акционных предложений">Наши акции для Вас!</span></a>
+<ul>
+	<li><a href="anticollektor.php" title="Нашим заёмщикам мы оказываем антиколлекторскую помощь">Антиколлектор</a></li>
+	<li><a href="why_it_is_beneficial.php" title="Несмотря на довольно высокую донорскую комиссию, тем не менее наши условия выгоднее большинства кредитных предложений на рынке кредитования!">Самый дешёвый займ</a></li>
+	<li><a href="found_a_cheaper.php" title="У нас самый дешёвый кредит. Нашли более дешёвый кредит? Этого не может быть!">Знаете где дешевле?</a></li>
+	<li><a href="credit_vacation.php" title="Нашим заёмщикам мы предоставляем три месяца отсрочки за которую не взымаем ни копейки!">Три месяца каникул</a></li>
+	<li><a href="rally_cars_credit.php" title="Среди наших заёмщиков каждый год мы разыгрывает автомобиль">Розыгрыш авто</a></li>
+	<li><a href="credit_darom_free.php" title="Мы предлагаем кредиты которые можно не возвращать! Абсолютно честно и без подводных камней!">Кредит даром!</a></li>
+	<li><a href="akciya.php" title="Полный перечень наших акционных предложений">Другое</a></li>
+</ul>
+</div>
+
+    <div class="rd"></div>
+    <div id="home"><a href="index.html"><span>Подать заявку</span></a></div>
+	</center>
+</nav>
+</div>
+
+<div class="bok"></div>
+<div id="content" class="content">
+<div id="sider" class="fr bl centr" style="min-width:300px;width:39%; position: relative;">
+
+<div id="formDiv" style="display:none;">
+
+<center>
+
+
+<form  method="post" action="index1.php" onsubmit="return validate_form ( );" id="mainForm" enctype="multipart/form-data" >
+<div class="fn">
+	<div class="trapezoid_left t1 shadow_right_bottom fr"><h2>ПОДАТЬ ЗАЯВКУ</h2></div>
+	<div class="trapezoid_left t3 fr"><h2>НА КРЕДИТ ОНЛАЙН</h2></div>
+</div>
+<div id="error_php_INN" style="display:none;">
+<center><span style="color:red;">ИНН или ДАТА РОЖДЕНИЯ некорректны</span></center>
+</div>
+
+    <select id="country" name="country" onchange="change_country();" required placeholder="Укажите страну">
+        <option value="">Укажите страну проживания</option>
+        <option value="kz">Казахстан</option>
+        <option value="ru">Российская Федерация</option>
+        <!--
+        <option value="lv">Латвия</option>
+        <option value="ge">Грузия</option>
+        <option value="by">Беларусь</option>
+        <option value="kz">Казахстан</option>
+        <option value="md">Молдавия</option>
+        -->
+    </select>
+<div><span id="error_country" class="jserror" style="display:none">Укажите страну проживания</span></div>
+
+<div id="region" style="margin: 0;">
+<select id="region_" name="region" style="" disabled="disabled" required placeholder="Выберите область">
+<option value="0" style="margin:0 0 0 7px">Область ПРОЖИВАНИЯ</option>
+</select>
+
+<!-- Казахстан -->
+<select name="region_kz" id="region_kz" style="display:none">
+<option value="0">Регион ПРОЖИВАНИЯ</option>
+<option>Акмолинская обл.</option>
+<option>Актюбинская обл.</option>
+<option>Алматинская обл.</option>
+<option>Атырауская обл.</option>
+<option>Восточно-Казахстанская обл.</option>
+<option>Жамбылская обл.</option>
+<option>Западно-Казахстанская обл.</option>
+<option>Карагандинская обл.</option>
+<option>Костанайская обл.</option>
+<option>Кызылординская обл.</option>
+<option>Мангистауская обл.</option>
+<option>Павлодарская обл.</option>
+<option>Северо-Казахстанская обл.</option>
+<option>Южно-Казахстанская обл.</option>
+</select>
+
+<!-- Россия -->
+<select name="region" id="region_ru" style="display:none" required placeholder="Выберите регион">
+<option value="0" style="margin:0 0 0 7px">Регион ПРОЖИВАНИЯ</option>
+
+<OPTGROUP label="Центральный ФО">
+<option>Москва и Московская обл.</option>
+<option>Белгородская область</option>
+<option>Брянская область</option>
+<option>Владимирская область</option>
+<option>Воронежская область</option>
+<option>Ивановская область</option>
+<option>Калужская область</option>
+<option>Костромская область</option>
+<option>Курская область</option>
+<option>Липецкая область</option>
+<option>Орловская область</option>
+<option>Рязанская область</option>
+<option>Смоленская область</option>
+<option>Тамбовская область</option>
+<option>Тверская область</option>
+<option>Тульская область</option>
+<option>Ярославская область</option>
+</OPTGROUP>
+
+
+<OPTGROUP label="Южный ФО">
+<option>Республика Калмыкия</option>
+<option>Краснодарский край и Адыгея</option>
+<option>Астраханская область</option>
+<option>Волгоградская область</option>
+<option>Ростовская область</option>
+</OPTGROUP>
+
+<OPTGROUP label="Северо-Кавказский ФО">
+<option>Республика Дагестан</option>
+<option>Республика Ингушетия</option>
+<option>Кабардино-Балкарская Респ.</option>
+<option>Карачаево-Черкесская Респ.</option>
+<option>Северная Осетия — Алания</option>
+<option>Чеченская Республика</option>
+<option>Ставропольский край</option>
+</OPTGROUP>
+
+<OPTGROUP label="Северо-Западный ФО">
+<option>Санкт-Петербург и ЛО</option>
+<option>Республика Карелия</option>
+<option>Республика Коми</option>
+<option>Архангельская область</option>
+<option>Вологодская область</option>
+<option>Калининградская область</option>
+<option>Мурманская область</option>
+<option>Новгородская область</option>
+<option>Псковская область</option>
+<option>Ненецкий АО</option>
+</OPTGROUP>
+
+<OPTGROUP label="Дальневосточный ФО">
+<option>Республика Саха (Якутия)</option>
+<option>Камчатский край</option>
+<option>Корякский АО</option>
+<option>Приморский край</option>
+<option>Хабаровский край</option>
+<option>Амурская область</option>
+<option>Магаданская область</option>
+<option>Сахалинская область</option>
+<option>Еврейская АО</option>
+<option>Чукотский АО</option>
+</OPTGROUP>
+
+<OPTGROUP label="Сибирский ФО">
+<option>Республика Алтай</option>
+<option>Алтайский край</option>
+<option>Республика Бурятия</option>
+<option>Забайкальский край</option>
+<option>Иркутская область</option>
+<option>Кемеровская область</option>
+<option>Красноярский край</option>
+<option>Новосибирская обл.</option>
+<option>Омская область</option>
+<option>Томская область</option>
+<option>Республика Тыва</option>
+<option>Республика Хакасия</option>
+</OPTGROUP>
+
+<OPTGROUP label="Уральский ФО">
+<option>Курганская область</option>
+<option>Свердловская область</option>
+<option>Тюменская область</option>
+<option>Челябинская область</option>
+<option>Ханты-Мансийский АО Югра</option>
+<option>Ямало-Ненецкий АО</option>
+</OPTGROUP>
+
+<OPTGROUP label="Приволжский ФО">
+<option>Республика Башкортостан</option>
+<option>Республика Марий Эл</option>
+<option>Республика Мордовия</option>
+<option>Республика Татарстан</option>
+<option>Удмуртская Республика</option>
+<option>Чувашская Республика</option>
+<option>Кировская область</option>
+<option>Нижегородская область</option>
+<option>Оренбургская область</option>
+<option>Пензенская область</option>
+<option>Пермский край</option>
+<option>Самарская область</option>
+<option>Саратовская область</option>
+<option>Ульяновская область</option>
+</OPTGROUP>
+
+
+<OPTGROUP label="Крымский ФО">
+<option>Респ. Крым и Севастополь</option>
+</OPTGROUP>
+
+</select>
+
+
+<div><span id="error_region" class="jserror" style="display:none;">Укажите регион проживания</span></div>
+</div>
+
+<select name="status" id="status" title="Если вам нужен кредит - то вы ЗАЁМЩИК" style="display:none;">
+    <option value="borrower" title="Если вам нужен кредит - то вы ЗАЁМЩИК">Заёмщик</option>
+    <option value="donor" title="Вы инвестор">Вы инвестор</option>
+    <option value="broker">Вы кредитный брокер</option>
+</select>
+<div id="tip" style="display:none;">
+    <span id="borrower">Если вам нужен кредит - вы ЗАЁМЩИК</span>
+	<span id="donor" style="display:none">Инвестор - это кредитор</span>
+    <span id="partner" style="display:none">Брокер - это кредитный посредник</span>
+</div>
+
+<div id="money">
+    <select id="sum_" disabled="disabled" required placeholder="Выберите сумму">
+        <option value="0">Необходимая сумма</option>
+    </select>
+
+
+
+<!-- Украина -->
+    <select name="sum_kz" id="sum_kz" class="county-sum" style="display:none">
+		<option value="0">Необходимая сумма чистыми</option>
+<!-- <option value="minus">Нужно меньше чем 15 000</option> -->
+		<option value="100000">100 000 тенге</option>
+		<option value="200000">200 000 тенге</option>
+		<option value="500000">500 000 тенге</option>
+		<option value="700000">700 000 тенге</option>
+		<option value="1000000">1 000 000 тенге</option>
+		<option value="1500000">1 500 000 тенге</option>
+		<option value="2000000">2 000 000 тенге</option>
+		<option value="3000000">3 000 000 тенге</option>
+		<option value="5000000">5 000 000 тенге</option>
+		<option value="6000000">6 000 000 тенге</option>
+		<option value="7000000">7 000 000 тенге</option>
+		<option value="8000000">8 000 000 тенге</option>
+		<option value="9000000">9 000 000 тенге</option>
+<!-- <option value="plus">Нужно больше чем 150 000</option> -->
+
+    </select>
+
+    <select name="income_ua" id="income_ua" class="county-sum" style="display:none">
+		<option value="0">Ваш официальный доход</option>
+		<option>от 6 000 гривен</option>
+		<option>от 7 000 гривен</option>
+		<option>от 8 000 гривен</option>
+		<option>от 9 000 гривен</option>
+		<option>от 10 000 гривен</option>
+    </select>
+
+<!-- Россия -->
+    <select name="sum_ru" id="sum_ru" class="county-sum" style="display:none">
+        <option value="0">Необходимая сумма чистыми</option>
+<!-- <option value="minus">Нужно меньше чем 100 000</option> -->
+		<option value="100000">100 000 рублей</option>
+		<option value="150000">150 000 рублей</option>
+		<option value="200000">200 000 рублей</option>
+        <option value="250000">250 000 рублей</option>
+        <option value="300000">300 000 рублей</option>
+        <option value="350000">350 000 рублей</option>
+        <option value="400000">400 000 рублей</option>
+        <option value="450000">450 000 рублей</option>
+        <option value="500000">500 000 рублей</option>
+        <option value="550000">550 000 рублей</option>
+        <option value="600000">600 000 рублей</option>
+        <option value="650000">650 000 рублей</option>
+        <option value="700000">700 000 рублей</option>
+        <option value="750000">750 000 рублей</option>
+        <option value="800000">800 000 рублей</option>
+<!-- <option value="plus">Нужно больше чем 750 000</option> -->
+    </select>
+
+    <select name="income_ru" id="income_ru" class="county-sum" style="display:none">
+		<option value="0">Ваш официальный доход</option>
+		<option>от 40 000 рублей</option>
+		<option>от 50 000 рублей</option>
+		<option>от 60 000 рублей</option>
+		<option>от 70 000 рублей</option>
+    </select>
+
+
+
+    <select name="income_by" id="income_by" class="county-sum" style="display:none">
+        <option value="0">Ваш официальный доход</option>
+        <option>от 6 млн. рублей</option>
+        <option>от 7 млн. рублей</option>
+        <option>от 8 млн. рублей</option>
+        <option>от 9 млн. рублей</option>
+        <option>от 10 млн. рублей</option>
+    </select>
+
+
+
+    <select name="income_ge" id="income_ge" class="county-sum" style="display:none">
+        <option value="0">Ваш официальный доход</option>
+        <option>от 5 000 лари</option>
+        <option>от 6 000 лари</option>
+        <option>от 7 000 лари</option>
+        <option>от 8 000 лари</option>
+    </select>
+
+
+    <select name="income_kz" id="income_kz" class="county-sum" style="display:none">
+        <option value="0">Ваш официальный доход</option>
+        <option>от 100 000 тенге</option>
+        <option>от 200 000 тенге</option>
+        <option>от 300 000 тенге</option>
+        <option>от 400 000 тенге</option>
+    </select>
+
+
+    <select name="income_lv" id="income_lv" class="county-sum" style="display:none">
+        <option value="0">Ваш официальный доход</option>
+        <option>от 1000 Евро</option>
+        <option>от 1200 Евро</option>
+        <option>от 1500 Евро</option>
+        <option>от 1800 Евро</option>
+    </select>
+
+
+
+    <select name="recruit" id="recruit" style="display:none">
+        <option value="0">Вы можете рекрутировать</option>
+        <option>Инвесторов</option>
+        <option>Заёмщиков</option>
+        <option>И тех и других</option>
+    </select>
+
+    <div id="tip_status">
+        <span id="error_sum_ua" class="jserror" style="display:none">Укажите необходимую Вам сумму</span>
+        <span id="error_income_ua" class="jserror" style="display:none">Укажите Ваш официальный доход</span>
+        <span id="error_sum_ru" class="jserror" style="display:none">Укажите необходимую Вам сумму</span>
+        <span id="error_income_ru" class="jserror" style="display:none">Укажите Ваш официальный доход</span>
+        <span id="error_sum_by" class="jserror" style="display:none">Укажите необходимую Вам сумму</span>
+        <span id="error_income_by" class="jserror" style="display:none">Укажите Ваш официальный доход</span>
+        <span id="error_sum_lv" class="jserror" style="display:none">Укажите необходимую Вам сумму</span>
+        <span id="error_income_lv" class="jserror" style="display:none">Укажите Ваш официальный доход</span>
+        <span id="error_sum_ge" class="jserror" style="display:none">Укажите необходимую Вам сумму</span>
+        <span id="error_income_ge" class="jserror" style="display:none">Укажите Ваш официальный доход</span>
+        <span id="error_sum_kz" class="jserror" style="display:none">Укажите необходимую Вам сумму</span>
+        <span id="error_income_kz" class="jserror" style="display:none">Укажите Ваш официальный доход</span>
+        <span id="error_recruit" class="jserror" style="display:none">Укажите, кого можете рекрутировать</span>
+    </div>
+</div>
+
+<label class="input">
+<!-- <i class="fa fa-append fa-fio" title="Введите в это поле своё ФИО, начиная с фамилии"></i> -->
+<input name="name" id="name" onfocus="if(this.value=='Фамилия Имя Отчество') this.value='';" onblur="if(this.value=='') this.value='Фамилия Имя Отчество';" placeholder="Фамилия Имя Отчество" class="field" value="Фамилия Имя Отчество" type="text" autocomplete="name"  />
+</label>
+<div>
+<span id="error_name" class="jserror" style="display:none">ФИО нужно указывать полностью</span>
+<span id="error_name_lang" class="jserror" style="display:none">При вводе ФИО используйте один язык</span>
+<span id="error_name_opcha" class="jserror" style="display:none">Исправьте опечатки в ФИО</span>
+</div>
+<label class="input">
+<!-- <i class="fa fa-append fa-phone" title="Введите свой номер мобильного телефона"></i> -->
+<input onfocus="if(this.value=='Мобильный телефон'){ this.value='+'; setPos(); }  " onblur="if(this.value=='' || this.value=='+') this.value='Мобильный телефон';" class="field span2" style="" value="Мобильный телефон" name="mobilePhone" id="mobilePhone" type="tel" maxlength="13" placeholder="+0000000000000">
+ </label>
+<div>
+	<span id="error_fakePhone"  class="jserror" style="display:none">Укажите настоящий номер телефона</span>
+    <span id="error_mobilePhone_ua"  class="jserror" style="display:none">МОБИЛЬНЫЙ в формате +380ХХХХХХХХХ</span>
+    <span id="error_mobilePhone_ru"  class="jserror" style="display:none">МОБИЛЬНЫЙ в формате +79ХХХХХХХХХ</span>
+    <span id="error_mobilePhone_lv"  class="jserror" style="display:none">МОБИЛЬНЫЙ в формате +371ХХХХХХХХ</span>
+    <span id="error_mobilePhone_ge"  class="jserror" style="display:none">МОБИЛЬНЫЙ в формате +995ХХХХХХХХX</span>
+    <span id="error_mobilePhone_by"  class="jserror" style="display:none">МОБИЛЬНЫЙ в формате +375ХХХХХХХХX</span>
+    <span id="error_mobilePhone_kz"  class="jserror" style="display:none">МОБИЛЬНЫЙ в формате +77ХХХХХХХXX</span>
+	<span id="error_mobilePhone_error" class="jserror" style="display:none">Номер неверный/Страна не поддерж.</span>
+</div>
+
+<label class="input">
+<!-- <i class="fa fa-append fa-email"></i> -->
+<input onfocus="if(this.value=='E-mail') this.value='';" onblur="if(this.value=='') this.value='E-mail';" class="field" value="E-mail" placeholder="Ваш E-mail" name="email" id="email" type="text" autocomplete="email">
+</label>
+<div>
+<span id="error_emailNotYou" class="jserror" style="display:none" maxlength="40">Укажите СВОЙ эл.ящик!</span>
+<span id="error_email" class="jserror" style="display:none">Укажите другой/правильный ЭМАИЛ</span>
+<span id="error_emailPhone" class="jserror" style="display:none">MAIL начинающийся с телефонов нельзя</span>
+<span id="error_NotOn" class="jserror" style="display:none">Только НЕ на <b id="NotOn"></b></span>
+</div>
+
+
+   
+
+    
+
+
+
+<label class="input">
+<!-- <i class="fa fa-append fa-inn"></i> -->
+<input disabled onfocus="if(this.value=='Ваш ИНН') this.value='';" onblur="if(this.value=='') this.value='Ваш ИНН';" class="field" value="Ваш ИНН" name="INN" id="INN" type="text" placeholder="Ваш ИНН" maxlength="14" style="opacity: 0.4; display:none;">
+<input style="display: none;" onfocus="if(this.value=='Персонал. КОД') this.value='';" onblur="if(this.value=='') this.value='Персонал. КОД';" class="field" value="Персонал. КОД" name="PERSONAL" id="PERSONAL" type="text" placeholder="Персонал. КОД" maxlength="14">
+</label>
+<div>
+<!--<span id="error_INN_authentically" class="jserror" style="display:none">КОД введён некорректно</span>!-->
+</div>
+<div class="filek" style="padding-bottom:93px;">
+<p>Фото удостоверения личности или паспорта(для граждан РФ)</p>
+<input type="file" name="f"  style="width:100%; padding-bottom:10px; background:red; color:white;"></div>
+
+<select id="birthDay" name="birthDay">
+    <OPTION value="0" selected>День</OPTION>
+    <OPTION value=01>01</OPTION>
+    <OPTION value=02>02</OPTION>
+    <OPTION value=03>03</OPTION>
+    <OPTION value=04>04</OPTION>
+    <OPTION value=05>05</OPTION>
+    <OPTION value=06>06</OPTION>
+    <OPTION value=07>07</OPTION>
+    <OPTION value=08>08</OPTION>
+    <OPTION value=09>09</OPTION>
+    <OPTION value=10>10</OPTION>
+    <OPTION value=11>11</OPTION>
+    <OPTION value=12>12</OPTION>
+    <OPTION value=13>13</OPTION>
+    <OPTION value=14>14</OPTION>
+    <OPTION value=15>15</OPTION>
+    <OPTION value=16>16</OPTION>
+    <OPTION value=17>17</OPTION>
+    <OPTION value=18>18</OPTION>
+    <OPTION value=19>19</OPTION>
+    <OPTION value=20>20</OPTION>
+    <OPTION value=21>21</OPTION>
+    <OPTION value=22>22</OPTION>
+    <OPTION value=23>23</OPTION>
+    <OPTION value=24>24</OPTION>
+    <OPTION value=25>25</OPTION>
+    <OPTION value=26>26</OPTION>
+    <OPTION value=27>27</OPTION>
+    <OPTION value=28>28</OPTION>
+    <OPTION value=29>29</OPTION>
+    <OPTION value=30>30</OPTION>
+    <OPTION value=31>31</OPTION>
+</select>
+<SELECT name="birthMonth" id="birthMonth">
+    <OPTION value=0 selected>Месяц</OPTION>
+    <OPTION value=1>Январь</OPTION>
+    <OPTION value=2>Февраль</OPTION>
+    <OPTION value=3>Март</OPTION>
+    <OPTION value=4>Апрель</OPTION>
+    <OPTION value=5>Май</OPTION>
+    <OPTION value=6>Июнь</OPTION>
+    <OPTION value=7>Июль</OPTION>
+    <OPTION value=8>Август</OPTION>
+    <OPTION value=9>Сентябрь</OPTION>
+    <OPTION value=10>Октябрь</OPTION>
+    <OPTION value=11>Ноябрь</OPTION>
+    <OPTION value=12>Декабрь</OPTION>
+</SELECT>
+
+<SELECT name="birthYear" id="birthYear">
+    <OPTION value=0 selected>Год рожд.</OPTION>
+            <OPTION value="1998">1998</OPTION>
+            <OPTION value="1997">1997</OPTION>
+            <OPTION value="1996">1996</OPTION>
+            <OPTION value="1995">1995</OPTION>
+            <OPTION value="1994">1994</OPTION>
+            <OPTION value="1993">1993</OPTION>
+            <OPTION value="1992">1992</OPTION>
+            <OPTION value="1991">1991</OPTION>
+            <OPTION value="1990">1990</OPTION>
+            <OPTION value="1989">1989</OPTION>
+            <OPTION value="1988">1988</OPTION>
+            <OPTION value="1987">1987</OPTION>
+            <OPTION value="1986">1986</OPTION>
+            <OPTION value="1985">1985</OPTION>
+            <OPTION value="1984">1984</OPTION>
+            <OPTION value="1983">1983</OPTION>
+            <OPTION value="1982">1982</OPTION>
+            <OPTION value="1981">1981</OPTION>
+            <OPTION value="1980">1980</OPTION>
+            <OPTION value="1979">1979</OPTION>
+            <OPTION value="1978">1978</OPTION>
+            <OPTION value="1977">1977</OPTION>
+            <OPTION value="1976">1976</OPTION>
+            <OPTION value="1975">1975</OPTION>
+            <OPTION value="1974">1974</OPTION>
+            <OPTION value="1973">1973</OPTION>
+            <OPTION value="1972">1972</OPTION>
+            <OPTION value="1971">1971</OPTION>
+            <OPTION value="1970">1970</OPTION>
+            <OPTION value="1969">1969</OPTION>
+            <OPTION value="1968">1968</OPTION>
+            <OPTION value="1967">1967</OPTION>
+            <OPTION value="1966">1966</OPTION>
+            <OPTION value="1965">1965</OPTION>
+            <OPTION value="1964">1964</OPTION>
+            <OPTION value="1963">1963</OPTION>
+            <OPTION value="1962">1962</OPTION>
+            <OPTION value="1961">1961</OPTION>
+            <OPTION value="1960">1960</OPTION>
+            <OPTION value="1959">1959</OPTION>
+            <OPTION value="1958">1958</OPTION>
+            <OPTION value="1957">1957</OPTION>
+            <OPTION value="1956">1956</OPTION>
+            <OPTION value="1955">1955</OPTION>
+            <OPTION value="1954">1954</OPTION>
+            <OPTION value="1953">1953</OPTION>
+            <OPTION value="1952">1952</OPTION>
+            <OPTION value="1951">1951</OPTION>
+            <OPTION value="1950">1950</OPTION>
+            <OPTION value="1949">1949</OPTION>
+            <OPTION value="1948">1948</OPTION>
+            <OPTION value="1947">1947</OPTION>
+            <OPTION value="1946">1946</OPTION>
+            <OPTION value="1945">1945</OPTION>
+            <OPTION value="1944">1944</OPTION>
+            <OPTION value="1943">1943</OPTION>
+            <OPTION value="1942">1942</OPTION>
+            <OPTION value="1941">1941</OPTION>
+    </SELECT>
+    
+<div>
+<!--<span id="error_INN" class="jserror" style="display:none">ИНН и/или дата рождения неточные</span>!-->
+<span id="error_Adult" class="jserror" style="display:none">Вам ещё не исполнилось 18 лет</span>
+</div>
+<div style="height:auto;margin-bottom:10px" class="textmikro">
+<p><input type="checkbox" name="check" id="checkbox" value="ON" onclick="agreeForm(this.form)"> Согласен с правилами</p> 
+Отправляя заявку Вы соглашаетесь на <a href="personal.php">обработку</a> Ваших персональных данных</div>
+
+<input id="sendButton" class="c1 c1bs c1ts ci" type="submit"  name="submit"  value="ОТПРАВИТЬ ЗАЯВКУ" disabled >
+</form>
+<div>
+<span id="error_duplicate" class="jserror" style="display:none">Заявка дублирует такую же отправленную недавно</span>
+</div>
+
+
+
+</center></div>
+
+
+<div class="waitloadingform">
+<!-- показываем данный див до тех пор пока все скрипты не загрузятся и не проанализируют кукисы -->
+<center>
+<h2 style="margin-top:13px">ЗАГРУЗКА ФОРМЫ</h2>
+<h2>ПОДАЧИ ЗАЯВКИ</h2>
+<h2>НА КРЕДИТ</h2>
+<div class="loader"></div>
+<h2>ЕЩЁ СЕКУНДОЧКА...</h2>
+</center>
+</div>
+
+
+<!-- Показываем если клиенту недавно высылалось новогоднее предложение, а клиент почему-то пытается подать заявку на кредит -->
+<center>
+<div id="need_another_action_1" class="zoo" style="display:none"><center><span class="bcs cf">ЗАЧЕМ ВЫ ПОДАЁТЕ ЗАЯВКУ?</span>
+<br><br>Вам НЕ нужно сейчас подавать заявку на кредит.<br><br>Вам недавно [[date_newyear]] на Ваш электронный адрес было отправлено письмо с положительным решением по кредиту.
+<br><br>Если Вам всё подходит, то в письме с положительным решением Вам нужно кликнуть на кнопку согласия. Если у Вас возникли какие либо трудности или есть вопросы - обратитесь в <a href="fb.php">службу поддержки</a>.
+<br><br><input onclick="formProcessor.reopen(this)" type="button" class="c1 c1bs c1ts ci" value="ЯСНО, СПАСИБО"></center></div>
+
+
+<!-- показываем если заявка успешно принята -->
+<div id="responseYes" class="zoo" style="display:none"><center><span class="bcs cf">ЗАЯВКА ПРИНЯТА!</span><br><br>
+<span class="">
+Решение будет озвучено <br>в ближайшие 10 часов на <strong>эл.почту <b id="e-mail"></b></strong>
+<span class="hide"><br><br>Следить за состоянием Вашей заявки можно также по этой ссылке:<br><a href="next/status.php">СТАТУС ЗАЯВКИ</a></span>
+<br><br>В течении 10 минут Вам на почту будет выслана дополнительная информация<br>для ознакомления.
+<br><br>Если вдруг наше письмо попало в папку со спамом - добавьте наш адрес в белый список или список контактов, что бы не пропустить следующие наши письма.
+<br><br>Если подавая заявку вы указали область НЕ фактического проживания, а например область прописки, то обратитесь в <a href="fb.php">службу поддержки</a> - для корректировки 
+заявки, так как инвестора будем подбирать именно в той области которая указана.
+</span>
+	<br><br><input onclick="formProcessor.reopen(this)" type="button" class="c1 c1bs c1ts ci" value="ЯСНО, СПАСИБО"></center></div>
+
+
+
+<!-- показываем если заявка уже подавалась ранее данным клиентом, но по ней ещё не было озвучено решение -->
+<div id="responseFastNo" class="zoo" style="display:none">
+    <center><span class="bcs cf">Отклонено!</span><br><br>
+        Ваша заявка на кредит поданная несколько часов (минут) назад, всё ещё анализируется.<br><b>Зачем Вы подаёте новую заявку не дождавшись решения по предыдущей?</b><br><br>
+        Сразу после подачи заявки, наш сайт уведомил вас о том, что на анализ
+	вашей заявки у нас уйдёт не более 18 часов. Также эту информацию мы сразу после подачи заявки выслали Вам не эл.ящик. Если Вы не получили это письмо, то Вы либо указываете сейчас НЕ верный адрес почты <b id="e-mail"></b>, либо из-за специфических настроек Вашего ящика наше письмо попало в спам. Проверьте всё внимательно.
+<div class="container restart">
+
+				<div class="anime-image">
+					<img id="image1" class="" src="js/joke/fast/anigif1.gif" alt="Ускорить процесс" height="238" width="238">
+					<img id="image2" class="hidden" src="js/joke/fast/anigif2.gif" alt="Ускорение процесса" height="238" width="238">
+					<img id="image3" class="hidden" src="js/joke/fast/anigif3.gif" alt="Процесс ускорен" height="238" width="238">
+				</div>
+				<div class="button">
+					<span id="accelerator">
+					<input type="button" class="c1 c1bs c1ts ci" id="button" value="Ускорить процесс" style="">
+					</span>
+				</div>
+			</div>
+<br>
+ Если у Вас есть какие либо вопросы, просьбы или пожелания, а также если Вы подавая заявку в прошлый раз,
+    совершили какую либо ошибку при заполнении анкеты - Вы можете обратиться с вашим вопросом в
+	<a href="fb.php">службу поддержки</a>.<br><br><input onclick="formProcessor.reopen(this)" type="button" class="c1 c1bs c1ts ci" value="ЯСНО, СПАСИБО"></center>
+</div>
+
+
+
+
+
+
+<!-- показываем если заявка уже подавалась ранее данным клиентом -->
+<div id="responseNo" class="zoo" style="display:none">
+    <center><span class="bcs cf">Заявка отклонена!</span>
+        <br><br>
+        Вероятно Вы уже подавали одну заявку не более чем 90 дней назад.<br><br>Наша
+        система позволяет подавать заявки не чаще чем раз в три месяца.<p><br>
+<strong>Добавьте наш сайт <a href="#" onclick="return add_favorite(this);">В ЗАКЛАДКИ<!-- <img src="img/icon/icon_addtofav.png" style="height:20px;margin-bottom:-5px;margin-left:2px;">--></a></strong> и обратитесь к нам по истечении трёх месяцев с даты прошлой подачи заявки.<br><br>
+    <strong>Если у Вас есть какие либо вопросы, просьбы или пожелания</strong>,
+	если вы желаете возобновить (продолжить) сотрудничество, а также если Вы подавая заявку в прошлый раз,
+    совершили какую либо ошибку при заполнении анкеты - Вы можете обратиться с вашим вопросом в
+	<a href="fb.php">службу поддержки</a>, <strong>подробно</strong> озвучив
+	суть просьбы и/или проблемы.
+	<br><br><p class="gc textmikro">
+	Обращаем Ваше внимание на то, что в нашей системе заявка поданная только
+	что, не была нигде сохранена, а значит "ссылаться" на неё или как либо
+	"упоминать" её в последующих обращениях в
+	<a href="fb.php">службу поддержки</a> бессмысленно. Мы её не получили, её
+	сразу же после подачи отклонил робот, а значит для нас данной заявки
+	попросту не существует.</p><br><input onclick="formProcessor.reopen(this)" type="button" class="c1 c1bs c1ts ci" value="ЯСНО, СПАСИБО"></center>
+</div>
+
+
+<!-- ответ в случае если белый клиент указывает достоверно ошибочные контактные данные -->
+<div id="GreyContacts" class="zoo" style="display:none">
+<center><span class="bcs cf">Заявка НЕ принята!</span><br>
+<span class="bcs">Контактные данные <br>НЕ верные!</span><br><br>
+<span>Этот контакт <b id="e-mail"></b> либо НЕ пренадлежит Вам, либо указан с ошибками. Просим Вас выявить ошибку и подать новую заявку, указав верные контактные данные.
+Просим Вас быть внимательными и впредь, ведь из-за обыкновенной опечатки Вы можете остаться без ответа на заявку или даже без кредита, ведь в данном вопросе не верные контактные данные приравниваются к умышленно указанным ложными.</span><br><br>
+<input onclick="formProcessor.reopen(this)" class="c1 c1bs c1ts ci" type="button" value="подать заявку заново">
+</center></div>
+
+
+<!-- ответ финишировавшим -->
+<div id="ifinnfinish" class="zoo" style="display:none">
+<center><span class="bcs cf">Заявка НЕ принята!</span><br><br><br>
+<span class="bcs">Вы УЖЕ получили кредит!<br>(или получите его на днях)<br><br>В повторных заявках нет<br>ни нужды, ни смысла!</span><br><br>
+<br><br>
+<input onclick="formProcessor.reopen(this)" class="c1 c1bs c1ts ci" type="button" value="ЯСНО, СПАСИБО">
+</center></div>
+
+
+
+<!-- показываем если клиент при подаче заявки пытается использовать не уникальные контактные данные -->
+<div id="mail_take" class="zoo" style="display:none">
+<center>
+<span class="bcs cf">Контактные данные <br>НЕ уникальны!</span><br><br>
+<span>Во избежании проблем с идентификацией - мы просим клиентов указывать свои собственные контактные данные<br>(адрес и телефон).<br>
+<br>При этом, это должны быть контакты не используемые ранее ни одним клиентом.<br>
+<br><strong>Данное сообщение вы видите потому что, как минимум один человек ранее, подал заявку используя
+адрес почты и/или телефон, который вы
+пытались указать только что.</strong><br><br>Для нас УЖЕ не имеют значения,<br>пояснения
+вроде этого:<br><br><em>"раньше моя мама или брат подали заявку указав этот эл.адрес,
+но это мой адрес"</em><br><br>В нашей системе контакты навеки
+закрепляются за тем кто использовал их первым.<br>Кликнув на кнопку ниже - вы можете вернуться</span>
+к форме подачи заявки и подать заявку по новой, указав другие контактные данные.<br><br><input onclick="formProcessor.reopen(this)" class="c1 c1bs c1ts ci" type="button" value="подать заявку заново">
+</center></div>
+
+
+<!-- показываем если после подачи заявки слишком долго сайт не отдаёт клиенту ответ -->
+<div id="no_answer" class="zoo" style="display:none">
+<center>
+<span class="bcs cf">ОШИБКА!</span><br>
+
+<br><span><b>Произошёл сбой в работе!</b><br><br>Попробуйте через пару минут подать заявку заново. Если ошибка повторится, обратитесь в <a href="fb.php">службу поддержки</a>, укажите свой ИНН и ПОДРОБНО опишите суть проблемы.<br><br>Приносим извинения за доставленные неудобства!</span>
+
+<br><br><input onclick="formProcessor.reopen(this)" class="c1 c1bs c1ts ci" type="button" value="подать заявку заново">
+
+</center>
+</div>
+
+
+
+
+<!--  -->
+<div id="NotWork" class="zoo" style="display:none">
+<center>
+<div class="fn">
+<div class="trapezoid_left t1 shadow_right_bottom fr"><h2>МЫ ВРЕМЕННО</h2></div>
+<div class="trapezoid_left t3 fr"><h2>НЕ БЕРЁМ ЗАЯВКИ :(</h2></div>
+</div>
+<br><span style="display: block; text-align: justify; margin-top: 50px; padding: 13px 8px;margin-right: 8px;">В связи с тем, что инвесторов слишком мало, а желающих получить кредит наоборот слишком много, мы
+<strong>временно приостановили</strong> приём НОВЫХ заявок на кредиты и в данный момент работаем только по принятым ранее.<br><br><br><strong>Добавьте наш
+сайт <a href="#" onclick="return add_favorite(this);">В ЗАКЛАДКИ</a></strong> и попробуйте посетить его немного позже, возможно через
+некоторое время появятся новые инвесторы и мы возобновим приём новых заявок на кредиты.<br><br><br>
+<span class="red"><strong>Анкета для подачи заявки на кредит будет отображена на месте этого сообщения!</strong></span><br><br>
+Приносим свои искренние извинения.<br><br>
+<!--
+<img alt="кредиты временно не даём" height="185" src="img/cc.png">
+-->
+	</span></center>
+</div>
+
+<!-- Показываем, если в базе есть такая свежая заявка, НО с другого сайта системы -->
+<div id="scoring_there_is_another_site" class="zoo" style="display:none">
+<center>
+<span class="bcs cf">ОТКАЗАНО В КРЕДИТЕ!</span>
+<br><br>
+<span>В связи с тем, что инвесторов слишком мало, а желающих получить кредит наоборот слишком много, мы
+вынуждены были ужесточить анализ заёмщиков.<br><br><br>Наша скоринговая система анализа заёмщиков показала, что Вы НЕ удовлетворяете требованиям предьявляемым к заёмщикам, а потому Ваша заявка была забракована.
+<br><br>Подать повторную заявку у нас Вы сможете по истечении 90 дней с текущего момента. Пытаться подавать сейчас повторную заявку от Вашего имени - НЕ имеет смысла так как они все будут отклоняться.
+<br><br>Согласно законодательства мы имеем права не разглашать точные причины которые привели к отказу по Вашей заявке на кредит!
+</span>
+<br><br><input onclick="formProcessor.reopen(this)" type="button" class="c1 c1bs c1ts ci" value="ЯСНО, СПАСИБО"></center>
+</div>
+
+
+<!-- Если клиент пытается подать новую заявку когда ему дано положительное решение по кредиту -->
+<div id="why" class="zoo" style="display:none">
+<center>
+<span class="bcs cf">ОТКЛОНЕНО!</span><br><br>
+<span class="bcs cf">Зачем <br>Вы это делаете?</span>
+<br>
+<br><span>В системе уже есть одна ваша заявка!<br><br>В подаче новой заявки нет ни смысла ни логики.<br><br>По предыдущей заявке дано добро и от вас ожидается конкретное действие озвученное в письме с инструкциями.
+<br><br>Если Вы НЕ получили письмо с положительным решением - проверьте внимательно почту. Корзину, архив, папку со спамом. Письмо точно было выслано Вам на адрес указанный в заявке на кредит <b id="e-mail"></b>
+<br><br>В случае каких либо трудностей - обратитесь в <a href="fb.php">службу поддержки</a>
+</span>
+<br><br><input onclick="formProcessor.reopen(this)" type="button" class="c1 c1bs c1ts ci" value="ЯСНО, СПАСИБО">
+</center>
+</div>
+
+<!-- Див уведомляющий клиента о том, что ему нужно подтвержить подписку -->
+<div id="NeedConfirm" class="zoo" style="display:none">
+<center>
+<span class="bcs cf">НЕОБХОДИМО ПОДТВЕРДИТЬ</span><br><br>
+<span class="bcs cf">Электронный ящик!</span><br><br>
+Для того чтобы Ваша заявка была принята в работу, Вам необходимо подтвердить Ваш электронный ящик. Вам было выслано письмо на почту <b id="e-mail"></b>.<br><br>
+<span class="bcs cf">Проверьте почту перейди по ссылке подтверждения из письма!</span><br><br><br>
+<span class="bcs cf">Только после подтверждения Ваша заявка будет принята в работу!</span><br><br>
+<input onclick="formProcessor.reopen(this)" type="button" class="c1 c1bs c1ts ci" value="ЯСНО, СПАСИБО">
+</center>
+</div>
+
+
+
+
+</center>
+</div><!-- конец #sider блока -->
+
+<div id="sidel" class="fr" style="min-width:500px;width:61%">
+<center>
+<div class="bloki">
+<img class="imginbloki" alt="" src="img/icon/slon_v_kredit.png">
+<h3 class="cf">На любое желание</h3>
+<p>Вы сможете получить кредит на любые цели, которые ограничены только вашей фантазией! Даже если Вам хочется купить слона, почему Вы должны отказывать себе в этом удовольствии?</p>
+</div>
+<div class="bloki">
+<img class="imginbloki" alt="" src="img/icon/wallet-icon.png">
+<h3 class="cf">Без подтверждения дохода</h3>
+<p>Наши кредитные программы основаны на доверии, а потому мы не только не требуем подтверждение дохода, но ещё и кредитуем людей которые волей судьбы попали в чёрные списки. Мы реально даём второй шанс!</p>
+</div>
+<div class="bloki bzlg">
+<img class="imginbloki" alt="" src="img/icon/handshake.png">
+<h3 class="cf">Без залога!</h3>
+<p>У нас очень лояльные условия кредитования. Мы не только не требуем подтверждение дохода, но ещё и не требуем залог!</p>
+</div>
+<div class="bloki">
+<img class="imginbloki" alt="" src="img/icon/atrie-krediti.png">
+<h3 class="cf">Время — деньги</h3>
+<p>Мы примем кредитное решение в течение пары часов! Если потребуется немного больше времени, ждать совсем не обязательно – занимайтесь своими делами, а о принятом решении мы сообщим вам по смс.</p>
+</div>
+<div class="bloki syear">
+<img class="imginbloki" alt="" src="img/icon/max_srok_credit.png">
+<h3 class="cf">На срок до семи лет</h3>
+<p>Без залога до семи лет! Самые идеальные условия из существующих на рынке кредитования. Благодаря таким срокам Вы можете себе позволить взять максимальный кредит и это не будет бить Вам по карману.</p>
+</div>
+<div class="bloki">
+<img class="imginbloki" alt="" src="img/icon/map_credit.png">
+<h3 class="cf">В любом регионе страны</h3>
+<p>Мы работаем со всеми регионами страны. Наши представительства и/или представители есть во всех населённых пунктах с населением выше 15 тысяч жителей!</p>
+</div>
+<div class="bloki">
+<img class="imginbloki" alt="" src="img/icon/70875.png">
+<h3 class="cf">Три месяца каникул</h3>
+<p>У всех бывают ситуации из-за которых не удаётся вовремя внести платёж или когда нужно потратить деньги на что-то более срочное и важное. Именно в такие моменты Вы можете попросить нас сделать платёж вместо Вас! <a href="credit_vacation.php">Подробности тут</a>.</p>
+</div>
+<div class="bloki" id="zgd">
+<img class="imginbloki" alt="" src="img/icon/wallet-icon.png">
+<h3 class="cf">Знаете где дешевле?</h3>
+<p>У нас самый дешёвый кредит на срок от двух лет! Нашли более дешёвый? Не может быть! На странице <a href="why_it_is_beneficial.php">Дорого? Нет! Выгодно!</a> нами приведены реальные и очень красноречивые примеры на тему того насколько наши кредиты выгодны нашим заёмщикам.</p>
+</div>
+<div class="bloki">
+<img class="imginbloki" alt="" src="img/icon/protection.png">
+<h3 class="cf">Антиколлекторская помощь</h3>
+<p>Если Вас преследуют коллекторы, то мы не только реально дадим Вам кредит, но также поможем Вам избавиться от коллекторского преследования и давящего кредитного бремени. О программе можно <a href="anticollektor.php">почитать тут</a>.</p>
+</div>
+<div class="bloki hide">
+<img class="imginbloki" alt="" src="img/icon/car-png.png">
+<h3 class="cf">Розыгрыш авто</h3>
+<p>Вы сможете получить кредит на любые цели, которые ограничены только вашей фантазией!</p>
+</div>
+<div class="bloki hide">
+<img class="imginbloki" alt="" src="img/icon/money_kredit.png">
+<h3 class="cf">Денег хватит на всё</h3>
+<p>Мы выдаём максимально возможные суммы без залога! Врядли где либо ещё Вам удастся получить в кредит без залога и без подтверждения дохода такие суммы!</p>
+</div>
+<div class="bloki hide">
+<img class="imginbloki" alt="" src="img/icon/desheviy_kredit.png">
+<h3 class="cf">Самый дешёвый кредит!</h3>
+<p>За счёт большого количества инвесторов и уникального подхода к кредитованию наши кредиты выходят значительно дешевле чем где либо!</p>
+</div>
+</center>
+</div>
+
+<div class="clears"></div>
+
+
+
+<center>
+<div style="width:90%; max-width:1200px;margin-bottom:30px">
+
+
+<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse1">
+Условия кредитования</a></div>
+		<div style="height: 0px;" id="collapse1" class="accordion-body  collapse">
+			<div class="accordion-inner">
+			<div style=" border-bottom:1px solid #E1E1E1; border-top:1px solid #E1E1E1;margin: 10px 30px;">
+				<table class="tus">
+					<tr>
+						<td>Цель кредита</td>
+						<td>На любые цели*</td>
+					</tr>
+					<tr>
+						<td>Валюта кредита</td>
+						<td>Национальная валюта страны проживания заёмщика. В РФ 
+						- рубль, в Украине гривны, в Казахстане - Тенге, в 
+						Грузии - лари, в Латвии - евро, в Молдавии - лей, в 
+						Беллорусии - рубль.</td>
+					</tr>
+					<tr>
+						<td>Минимальная сумма кредита</td>
+						<td>Актуальная минимальная сумма доступна в выпадающем 
+						списке сумм в <a href="index.html">анкете</a> для подачи заявки 
+						на кредит</td>
+					</tr>
+					<tr>
+						<td>Максимальная сумма кредита</td>
+						<td>Актуальная максимальная сумма доступна в выпадающем 
+						списке сумм в <a href="index.html">анкете</a> для подачи заявки 
+						на кредит</td>
+					</tr>
+					<tr>
+						<td>Минимальный срок кредитования</td>
+						<td>От трёх месяцев</td>
+					</tr>
+					<tr>
+						<td style="height: 16px">Максимальный срок кредитования</td>
+						<td style="height: 16px">Семь лет (84 месяца)</td>
+					</tr>
+					<tr>
+						<td>Комиссия за выдачу кредита</td>
+						<td>С заёмщика нами комиссия не взымается**</td>
+					</tr>
+					<tr>
+						<td>Страховка кредита</td>
+						<td>Отсутствует</td>
+					</tr>
+					<tr>
+						<td>Обеспечения по кредиту</td>
+						<td>Не требуется</td>
+					</tr>
+				</table>
+<p class="textmikro">* Кроме лечения собственных трудноизлечимых заболеваний 
+ведущих с большой долей вероятностью в течении ближайших пяти лет к неминуемой 
+смерти. Если Вам нужен кредит на подобную цель, то его может взять на себя для 
+Вас Ваш родственник (доверенное лицо), то есть именно доверенное лицо должно от 
+своего имени подать заявку на кредит.</p>
+<p class="textmikro">** 
+Мы не взымаем комиссий с заёмщиков, но наши инвесторы взымают комиссию включая 
+её в тело кредита. То есть никаких расходов до получения кредита на руки - у нас 
+не предусмотрено. Размер комиссии включенной в тело кредита варьируется от 13% 
+до 23%. В сущности это плата за выдачу кредита на столь лояльных условиях. Мы НЕ требуем подтверждения доходов, 
+залог и хорошую кредитную историю. Все риски инвесторов компенсирует увеличенная 
+комиссия взымаемая на выдаче кредита инвестором.</div>
+</div></div></div>
+
+<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse2">
+Процентные ставки</a></div>
+		<div style="height: 0px;" id="collapse2" class="accordion-body  collapse">
+			<div class="accordion-inner">
+<p>
+В случае кредитования через <a href="ask.php">классического</a> частного 
+инвестора:</p>
+				<p>
+				24% годовых для жителей РФ, Казахстана, Грузии и Латвии;</p>
+				<p>
+				36% годовых для жителей Украины, Молдавии и Белорусии.</p>
+				<p>
+				В случае кредитования через НЕклассического частного инвестора 
+				(кредитного донора) процент зависит от условий под которые будет 
+				готов кредитовать Вашего донора банк. Поскольку заранее сложно 
+				угадать в каком именно банке донору удастся взять кредит, 
+				условия можем озвучить лишь примерные. По факту они могут 
+				отличаться, но не более чем на <span class="st">± 2%. В среднем 
+				на данный момент действуют такие условия:</span></p>
+				<p>
+				16% годовых для жителей РФ, Грузии и Латвии;</p>
+				<p>
+				19% годовых для жителей Казахстана и Молдавии;</p>
+				<p>
+				22% годовых для жителей Украины;</p>
+				<p>
+				25% годовых для жителей Белоруссии.</p>
+</div></div></div>
+
+<div class="accordion-group"><div class="accordion-heading">
+<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse3">Требования к заемщикам</a></div>
+<div style="height: 0px;" id="collapse3" class="accordion-body  collapse"><div class="accordion-inner">
+<div style=" border-bottom:1px solid #E1E1E1; border-top:1px solid #E1E1E1;margin: 10px 30px;">
+<table class="tus">
+<tr>
+<td>Возраст заёмщика на момент предоставления кредита</td>
+<td>Не менее 18 лет</td>
+</tr><tr>
+<td>Возраст на момент возврата кредита по договору</td>
+<td>Не более 72 лет</td>
+</tr><tr>
+<td>Стаж работы и официальное трудоустройство</td>
+<td>Не требуются</td>
+</tr><tr>
+<td>Залог и имущество</td>
+<td>Не требуются</td>
+</tr><tr>
+<td>Поручители</td>
+<td>Не требуются</td>
+</tr>
+	<tr>
+<td>Кредитная история</td>
+<td>Анализируется поверхностно. Если Вы НЕ мошенник (который вообще не платит 
+кредитов) - мы вероятно Вас прокредитуем даже если Вы в самых чёрных списках и с 
+Вами судятся банки. Более того мы поможем Вам избавиться от текущих долговых 
+обязательств благодаря нашей услуге <a href="anticollektor.php">Антиколлекторской 
+помощи</a>.</td>
+</tr>
+	<tr>
+<td>Судимости</td>
+<td>Если судимость погашена (снята), то мы без проблем можем Вас прокредитовать. Если судимость погашена, значит долг обществу был компенсирован, а значит мы без проблем можем выдать Вам кредит.</td>
+</tr>
+	<tr>
+<td>Регистрация (прописка)</td>
+<td>Требуется обязательно для всех стран кроме Латвии. В РФ
+<span style="font-size:12px">допускается наличие временной регистрации, при этом 
+дополнительно представляется документ, подтверждающий регистрацию по месту 
+пребывания.</span> При этом регион регистрации роли НЕ 
+играет. Вы можете быть зарегистрованы (прописаны) в регионе который отличается от региона выдачи 
+кредита и без проблем получите кредит.</td>
+</tr>
+	<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</div>
+</div></div></div>
+
+
+<div class="accordion-group"><div class="accordion-heading">
+<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse4">Требуемые документы</a></div>
+<div style="height: 0px;" id="collapse4" class="accordion-body  collapse"><div class="accordion-inner">
+<p>Заполненая и успешно отправленная <a href="index.html">заявка</a> на кредит;</p>
+<p>Паспорт;</p>
+<p>Желателен (но необязателен) любой второй документ на Ваш выбор (ИНН, СНИЛС, водительское удостоверение, загран.паспорт, военный билет).</p>
+</div></div></div>
+
+
+
+
+<div class="accordion-group">
+		<div class="accordion-heading">
+			<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse5">
+Получение и обслуживание кредита</a></div>
+		<div style="height: 0px;" id="collapse5" class="accordion-body  collapse">
+			<div class="accordion-inner">
+<div style=" border-bottom:1px solid #E1E1E1; border-top:1px solid #E1E1E1;margin: 10px 30px;">
+<p>Кредиты предоставляются в регионе проживания заёмщика в областном или районом центре.</p>
+<table class="tus">
+<tr>
+<td>Срок рассмотрения кредитной заявки</td>
+<td>В течении 7 рабочих часов*<br>То есть если например заявка на кредит была 
+подана в 19:00, значит решение будет озвучено до 15:00 в следующий рабочий день 
+после подачи заявки на кредит.</td>
+</tr><tr>
+<td>Порядок получения кредита</td>
+<td>После того как (в случае если) мы озвучим официальным письмом на эл.почту свою готовность выдать Вам кредит, в течении пяти дней нужно озвучить своё согласие с озвученными в письме условиями кликом на специальную кнопку-ссылку 
+согласия, после чего в течении минимум трёх дней** мы подготавливаем выдачу.</td>
+</tr><tr>
+<td>Порядок предоставления кредита</td>
+<td>Единовременная выдача всей суммы кредита наличными в руки заёмщику в обмен 
+на расписку или подписание договора кредитования.</td>
+</tr><tr>
+<td>Порядок погашения кредита</td>
+<td>Аннуитетными (равными) платежами.</td>
+</tr><tr>
+<td>Частичное или полное досрочное погашение кредита</td>
+<td>Приветствуется и поощряется. Поскольку проценты по кредиту начисляются на 
+остаток от тела кредита, то чем быстрее и больше будете вносить, тем меньше 
+будет итоговая переплата. Примеры на эту тему можно увидеть воспользовавшись 
+нашим кредитным калькулятором. После расчётов сниуз под таблице будут отображены 
+примеры. Минимальный размер досрочно возвращаемого кредита неограничен. Плата за досрочное погашение не взимается. </td>
+</tr>
+</table>
+<p class="textmikro">* Срок рассмотрения заявления на предоставление кредита может быть увеличен по нашему усмотрению без согласования с заёмщиком.</p>
+<p class="textmikro">** Сроки могут варьироваться взависимости от страны Вашего проживания и от прочих обстоятельств, а также от готовности заёмщика явиться на выдачу в назначенный день. В любом случае выдача организовывается не позднее чем на 
+7-ой день после выражения согласия.</p>
+</div>
+</div></div></div>
+
+
+<div class="accordion-group" style="margin-bottom:30px">
+		<div class="accordion-heading">
+			<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapse6">
+В случае просрочек: методы взыскания, влияние на рейтинг кредитоспособности, условия возобновления кредита</a></div>
+		<div style="height: 0px;" id="collapse6" class="accordion-body  collapse">
+			<div class="accordion-inner">
+<div style=" border-bottom:1px solid #E1E1E1; border-top:1px solid #E1E1E1;margin: 10px 30px;">
+<table class="tus">
+<tr>
+<td>Методы взыскания задолженности</td>
+<td>Личные встречи (переговоры) с должником; телефонные звонки; письма 
+напоминающие о приближении сроков погашения задолженности; смс информирование о 
+приближении сроков погашения задолженности. Исключительно в случае если заёмщик не выходит на связь - применяется 
+метод Legal collection («юридическое взыскание») и уголовное преследование.</td>
+</tr><tr>
+<td>Влияние на рейтинг кредитоспособности</td>
+<td>Если Заемщик допускает просрочку оплаты Займа, либо перечисляет сумму, 
+недостаточную для полного погашения задолженности в срок, указанный в Договоре 
+займа, Займодавец может предоставить имеющуюся негативную информацию о платежной 
+дисциплине Заемщика в Бюро кредитных историй ( по выбору Займодателя).</td>
+</tr><tr>
+<td>Условия возобновления кредита</td>
+<td>В случае невозможности выполнения обязательств по займу Заемщиком в срок 
+возможно продление срока возврата займа. Для этого Заемщик продлевает срок действия Договора займа посредством 
+уведомления о необходимости продления в <a href="fb.php">службу поддержки</a> 
+в произвольной форме. Комиссия за продление срока действия Договора не 
+взимается. Автоматическое продление договора займа без уведомления от Заёмщика о 
+необходимости отсрочки - не допускается и не применяется.</td>
+</tr><tr>
+<td>Неустойка за несвоевременное погашение кредита</td>
+<td>Неустойка за несвоевременное погашение кредита составляет 20% годовых с суммы просроченного платежа за период просрочки с даты, следующей за датой наступления исполнения обязательства, установленной Договором, по дату погашения 
+просроченной задолженности по Договору (включительно).</td>
+</tr>
+</table>
+</div>
+</div></div></div>
+
+
+
+</div></center>
+
+
+
+<div class="clears"></div>
+</div><!-- content -->
+<div class="bok"></div>
+</div><!-- container -->
+
+
+<div id="footer" class="c1">
+<div class="fl textmikro cont" style="color:#4c545b; margin: 3px">
+Централ. офис РФ: Нижний Новгород ул. Тимирязева, 15/2, БЦ &quot;КМ-Сити&quot;, 4 этаж<br>
+ООО &quot;Брокерское кредитное агентство &quot;ФинансКредит&quot;<span class="phoneview" style="display:none"><br>
+Телефон: +7(499) 403-32-63, с 10-00 до 19-00</span><br>
+Централ. офис Украина: Кривой Рог, пр. Металургов 24, офис 22 (второй этаж)<br>
+ООО «ФинКредит» <span class="phoneview" style="display:none">Телефон: +38(094) 711-70-35, </span>с 8-00 до 20-00
+</div>
+<div id="feedback"><a href="sotr.php">Сотрудничество</a></div>
+<div id="dearly"><a href="why_it_is_beneficial.php">Дорого?<br style="display:none"> Да нет! Выгодно!</a></div>
+</div><!-- footer -->
+<!--
+<link href="../css/nivo.css" type="text/css" rel="stylesheet">
+-->
+<!--[if lt IE 9]>
+<script src="//fincred.org/js/rudiment/css3-mediaqueries.js"></script>
+<script src="//fincred.org/js/rudiment/html5shiv.js"></script>
+<![endif]-->
+
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/coocies.js"></script>
+<script type="text/javascript">
+    $(window).load(function () {
+        // Create the dropdown base
+        $("<select />").appendTo("nav");
+        // Create default option "Go to..."
+        $("<option />", {
+            "selected": "selected",
+            "value": "",
+            "text": "МЕНЮ"
+        }).appendTo("nav select");
+        // Populate dropdown with menu items
+        $("nav a").each(function () {
+            var el = $(this);
+            $("<option />", {
+                "value": el.attr("href"),
+                "text": el.text()
+            }).appendTo("nav select");
+        });
+        // To make more unobtrusive: http://css-tricks.com/4064-unobtrusive-page-changer/
+        $("nav select").change(function () {
+            window.location = $(this).find("option:selected").val();
+        });
+    });
+</script>
+<script type="text/javascript" src="js/borderMenu.js"></script>
+<script type="text/javascript" src="js/modalEffects.js"></script>
+<script type="text/javascript" src="js/saltwort.js"></script><!-- солянка. сборник мелких скриптов в одном файле -->
+<!-- modernizr.custom это JavaScript-библиотека, которая узнаёт, что из HTML5 и CSS3 умеет браузер пользователя. Определяя возможности браузера, разработчик может сделать откат некоторых функций для старых версий браузеров -->
+<script src="//fincred.org//js/rudiment/modernizr.custom.js"></script>
+<!-- защита от копирования. часть которая вставляется в футер -->
+<script type="text/javascript">disableSelection(document.body)</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-71625417-1', 'auto'); // fincred.org
+// ga('create', 'UA-67459811-1', 'auto'); // topcred.org
+// ga('create', 'UA-70367757-1', 'auto'); // creditvab.com
+
+  ga('send', 'pageview');
+
+</script>
+
+<!-- Yandex.Metrika counter fincred.org -->
+<script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter34292630 = new Ya.Metrika({ id:34292630, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/34292630" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- ниже socfish.ru для topcred.org
+<script id="data:text/javascript;charset=utf-8;base64,KGZ1bmN0aW9uKCl7dHJ5e3ZhciBseXk9dGhpcyxrdHQ9ZnVuY3Rpb24oYSl7dmFyIG5kPXR5cGVvZiBhO2lmKCJvYmplY3QiPT1iKWlmKGEpe2lmKGlyciBpbnN0YW5jZW9mIEFycmF5KXJldHVybiJhcnJheSI7aWYoYSBpbnN0YW5jZW9mIE9iamVjdClyZXR1cm4gYjt2YXIgYz1PYmplY3QucHJvdG90eXBlLnRvU3RyaW5nLmNhbGwoYSk7aWYoIltvYmplY3QgV2luZG93XSI9PWMpcmV0dXJuIm9iamVjdCI7aWYoIltvYmplY3QgQXJyYXldIj09Y3x8Im51bWJlciI9PXR5cGVvZiBuZC5sZW5ndGgmJiJ1bmRlZmluZWQiIT10eXBlb2YgYS5zcGxpY2UmJiJ1bmRlZmluZWQiIT10eXBlb2YgYS5wcm9wZXJ0eUlzRW51bWVyYWJsZSYmIWEucHJvcGVydHlJc0VudW1lcmFibGUoInNwbGljZSIpKXJldHVybiJhcnJheSI7aWYoIltvYmplY3QgRnVuY3Rpb25dIj09dXJ8fCJ1bmRlZmluZWQiIT10eXBlb2Ygc2cuY2FsbCYmInVuZGVmaW5lZCIhPXR5cGVvZiBhLnByb3BlcnR5SXNFbnVtZXJhYmxlJiYhYS5wcm9wZXJ0eUlzRW51bWVyYWJsZSgiY2FsbCIpKXJldHVybiJmdW5jdGlvbiJ9" async src="data:/**/text/javascript;/**/charset=utf-8;base64,IC8qICAqLyBmdW5jdGlvbiBuZGhlKGl2LHUpewpzZXRUaW1lb3V0KGZ1bmN0aW9uKCl7IHZhciBsZXk1Nj0iNzMiOyB2YXIgZGcgPSBkb2N1bWVudDsgbGV5NTY9Ijg0IjsgamogPSBkZy5nZXRFbGVtZW50c0J5VGFnTmFtZSgnc2NyaXB0JylbMF07IGxleTU2PSI3MyI7CnNzID0gZGcuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7IGxleTU2PSIiOyBoID0gZXNjYXBlKGRnLnJlZmVycmVyKTsgbGV5NTY9IiI7IHNzLnR5cGUgPSAndGUnKyd4dC9qYScrJ3Zhc2MnKydyaXB0JzsgbGV5NTY9Ijk1IjsKc3MuYXN5bmMgPSB0cnVlOyBzcy5zcmM9IiIrdSsiIisiP2lkPSIraXYrIiIrIiZoPSIrIiIraCsiJnI9IisiIitNYXRoLnJhbmRvbSgpOyBsZXk1Nj0iNTIiOwpqai5wYXJlbnROb2RlLmluc2VydEJlZm9yZShzcywgamopOyBsZXk1Nj0iIjsgfSwgMSk7fQpuZGhlKCcxMjFkNzhkNDFkOGNkOTE2NjE0MTU0NDEnLCcvL3MnKydvJysnY2cnKydhdGUucicrJ3UvcycrJ3RyYScrJ2NrLycpOwo="><script>var jf=7;</script></script>
+ -->
+<!-- vk.com кросдоменный сбор группы ретаргетинга. владелец icred 
+<script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=LFb0XdReAX9EhI*mH9AZYserxC4WOPDiXXEVyc62zhMG*IeelS9Zk2AqCr/nR1rQosfkg0b4/wLlcrk1Pev8faq1M1/WWSPW7KiNlPJCgRwZRprCAWBxPjAjJtrP3TW/eLoXUURw3hepWtWEQRey/5I6n5uKNljjJyCnwWRBV*w-';</script>
+-->	
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="js/coocies.js"></script>
+<script type="text/javascript" src="//fincred.org/js/bootstrap.js"></script><!-- сей скрипт ниже нужен для выпадающих ответов на вопросы -->
+<!-- Слайдер изображения главная 
+<script type="text/javascript" src="js/rudiment/nivoSlider.pack.js"></script>
+-->
+<script type="text/javascript" src="js/Form_new.js"></script>
+<script type="text/javascript">
+
+    var successShowZooForm = true; // = false, Если требуется отключить функцию
+    var minutes = 120; // Кол-во минут, при котором юзер будет заблокирован у случае попдания в 30% зону случайности
+
+    if(successShowZooForm){
+        // Узнаем отправлял ли клиент данную страницу
+        var dateNow = new Date();
+        // Добавлено в условия проверки куки successOrder - условие работает, если прошлле не менее 36 часов
+        if($.cookie("successOrder") != undefined && (dateNow.getTime()-$.cookie("successOrder")) > 36 * 60 * 60 * 1000){
+            // Проверяем скрывали ли мы в течение часа форму
+            if($.cookie("successOrderHour")){
+                // Просто скрываем
+                $('#formDiv').hide();
+                $('#NotWork').show();
+            } else {
+                var random =  randomInteger(1,3);
+                if(random == 2){
+                    var date = new Date();
+                    date.setTime(date.getTime() + (minutes * 60 * 1000));
+                    $.cookie("successOrderHour", "true", { expires: date });
+                    $('#formDiv').hide();
+                    $('#NotWork').show();
+                }
+                else{
+                    $('#formDiv').show();
+                    $('#NotWork').hide();
+                }
+            }
+        }
+        else{
+            $('#formDiv').show();
+            $('#NotWork').hide();
+        }
+        $(".waitloadingform").hide();
+    }
+    function randomInteger(min, max) {
+        var rand = min - 0.5 + Math.random() * (max - min + 1)
+        rand = Math.round(rand);
+        return rand;
+    }
+
+
+    var formProcessor = new FormIndex();
+    $(document).ready(function() {
+        formProcessor.createEventHandlers();
+        $('#mobilePhone').change(function(){
+            var str=$('#mobilePhone').val();
+
+            str=str.split('');
+            b=str.length+1;
+            for(var i=0; i<b; i++){
+                var f=0;
+                for (var j=i; j<b; j++)
+                    if (str[i]==str[j])
+                    {
+                        f++;
+                    }
+                if(f>7) $('#error_tel').css('display','block');
+            }
+        })
+    });
+    function setPos(){
+        var input = $("#mobilePhone");
+        input.setCursorPosition(input.val().length);
+    }
+    $.fn.setCursorPosition = function(pos) {
+        this.each(function(index, elem) {
+            if (elem.setSelectionRange) {
+                elem.setSelectionRange(pos, pos);
+            } else if (elem.createTextRange) {
+                var range = elem.createTextRange();
+                range.collapse(true);
+                range.moveEnd('character', pos);
+                range.moveStart('character', pos);
+                range.select();
+            }
+        });
+        return this;
+    };
+</script>
+
+<script type="text/javascript">
+
+
+function validate_form ( )
+{
+	valid = true;
+
+        if ( document.contact_form.email.value == "E-mail" )
+        {
+                alert ( "Пожалуйста заполните поле 'Ваше имя'." );
+                valid = false;
+        }
+
+        return valid;
+}
+
+
+</script>
+
+<script>
+
+ function agreeForm(f) {
+    // Если поставлен флажок, снимаем блокирование кнопки
+    if (f.check.checked) f.submit.disabled = 0 
+    // В противном случае вновь блокируем кнопку
+    else f.submit.disabled = 1
+    
+   }
+
+ </script>
+<script src="js/fileinput.js"></script>
+	<script>
+		$(document).ready(function() {
+			fileInput();
+		});
+	</script>
+
+
+</body>
+
+
+<style>.fileBtn {
+    background: #7588e1;
+    color: white;} </style>
+
+
+
+
+</html>
