@@ -135,7 +135,9 @@ select#birthYear{width:115px !important;}
 #tip span,#tips span{color:green !important}
 #error_php{color:red !important;}
 #error_php_INN{margin:20px 0;display:inline-block;}
-input.error,select.error,textarea.error{color:red !important;border:1px solid red !important;}
+input.error,select.error,textarea.error {!important;border:1px solid red !important;}
+input[type=checkbox].error{color:red}
+input[type=file].error{background:red; color:white;}
 #bt-menu select{display:none}
 #fbtform p{text-indent:0px;margin:5px 10px 0 10px;font-size:10px;}
 #sider select, .uzko select, #calkuliktab select, #formDiv select, #fbtform select{width:290px;}

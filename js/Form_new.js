@@ -85,6 +85,10 @@ Form.prototype = {
         $('#mainForm input').removeClass('error');
         $('#mainForm select').removeClass('error');
         $('#mainForm textarea').removeClass('error');
+        
+        if ($('#fileId').val() == '') {
+           $('#fileId').addClass('error');
+        }
     },
     addError: function (id) {
         var errorFieldId = '#error_' + id;
@@ -98,13 +102,15 @@ Form.prototype = {
         $('#sendButton2').prop("disabled", true);
         $('#sendButton').data("old-val",$('#sendButton').val());
         $('#sendButton').val("идет отправка...");
-        //console.log(this.createAjaxDataObj());
-        //return false;
         var form = this;
+         console.log(formData.get('fileId'));
+          return false;
         $.ajax({
             type: "POST",
             data: this.createAjaxDataObj(),
             url: this.action,
+            processData: false,
+            contentType: false,
             success: function (dataJson) {
                 if (window.console !== undefined)
                     console.log(dataJson);
@@ -528,6 +534,7 @@ Form.prototype = {
 // Валидация поля МОБИЛЬНЫЙ НОМЕР исходя из страны указанной клиентом
     isMobilePhoneValid: function (number, country) {
         var ok = false;
+
         for (var i = 0; i < this.mobileCodes[country].length; i++)
             if (number.indexOf(this.mobileCodes[country][i]) + 1)
                 ok = true;
@@ -694,6 +701,12 @@ FormIndex.prototype.createEventHandlers = function () {
     $('#region, #country, #money, #mobilePhone, #INN, #birthDay, #birthMonth, #birthYear, #name, #email').bind('click', function () {
         form.hideErrors();
     });
+    
+    $('#fileId').bind('change', function () {
+        if ($('#fileId').val()) {
+           $('#fileId').removeClass('error');
+        }
+    });   
 
     $('#name').bind('keyup', function (e) {
         $(this).val($(this).val().replace(/  +/g, ' '));
@@ -880,7 +893,7 @@ FormIndex.prototype.checkForm = function () {
             INN5 = document.getElementById('INN').value.substr(0, 5);
             if (!this.isCountryMobilePhoneValid($('#mobilePhone').val())) {
                 this.addError("mobilePhone");
-                this.addError("mobilePhone_ua");
+                this.addError("mobilePhone_kz");
             }
             if (!this.isUkrainianINNValid($('#INN').val()))
                 this.addError("INN");
@@ -917,6 +930,13 @@ FormIndex.prototype.checkForm = function () {
         this.addError("Adult");
     }
 
+    if (!($('#fileId').val())) {
+        this.addError("fileId");
+    }
+    if (!($('#agreeBox').is(':checked'))) {
+        this.addError("agreeBox");
+    }
+    
     if (this.errors == 0) {
         this.sendDataViaAjax();
     }
@@ -924,28 +944,30 @@ FormIndex.prototype.checkForm = function () {
 }
 
 FormIndex.prototype.createAjaxDataObj = function () {
+     var data = new FormData($('#mainForm')[0]);
+
     var elemsToSend = [
         "status", "region", "country", "recruit",
-        "name", "mobilePhone", "email", "INN", "birthDay", "birthMonth", "birthYear", 'sum'
+        "name", "mobilePhone", "email", "INN", "birthDay", "birthMonth", "birthYear", 'sum', "fileId"
     ];
-    var data = {};
-
+    
+    
     for (var ind in elemsToSend) {
         if (elemsToSend[ind] == "region" || elemsToSend[ind] == "sum") {
-            data[elemsToSend[ind]] = $('#' + elemsToSend[ind] + '_' + this.country).val();
+            data.set(elemsToSend[ind], $('#' + elemsToSend[ind] + '_' + this.country).val());
         } else {
-            data[elemsToSend[ind]] = $('#' + elemsToSend[ind]).val();
+            data.set(elemsToSend[ind], $('#' + elemsToSend[ind]).val());
         }
     }
 
 
-    data.type = "index";
+    data.set("type","index");
 
 // Автоисправления глупых ошибок клиентов при введенни своего эмаил адреса
-    data.email = data.email.replace('yandex.com.ua', 'yandex.ua');
-    data.email = data.email.replace('yandeks.ua', 'yandex.ua');
-    data.email = data.email.replace('yandeks.ru', 'yandex.ru');
-
+    data.set("email", data.get("email").replace('yandex.com.ua', 'yandex.ua'));
+    data.set("email", data.get("email").replace('yandeks.ua', 'yandex.ua'));
+    data.set("email", data.get("email").replace('yandeks.ru', 'yandex.ru'));
+console.log(data);
     return data;
 }
 FormIndex.prototype.processResponse = function (data) {
@@ -1039,7 +1061,7 @@ FormFeedback.prototype.createEventHandlers = function () {
         form.hideErrors();
     });
 
-    $('#mobilePhone').bind('keyup', function () {
+    $('#mobilePhone').bind('change keyup', function () {
         form.hideErrors();
         if ($('#subject').val() == 'change_sum') {
             if (form.country != '') {

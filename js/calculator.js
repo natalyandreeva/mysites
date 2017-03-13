@@ -37,18 +37,24 @@ $('input[name="sendButton"]').click(function(){
     }
     self.val('Рассчитываем..');
 
-    var country = $('#country').val(),
-        sum = $("#sum_"+country).val(),
-        marja = $('#marja').val(),
-        srok = $('#srok').val();
+    var form_data = new FormData($('#mainForm')[0]);
+
+    var country = $('#country').val();
+    
+    form_data.append('sum', $("#sum_"+country).val());
+        
 
     var request = $.ajax({
         type: "POST",
-        data: {action:'calculate', data:[country, sum, marja, srok]},
-        dataType: "json",
+        url: '/lib/calculator.php',
+        data: form_data,
+        processData: false,
+        contentType: false,
     });
     request.done(function(res) {
         
+        res = jQuery.parseJSON(res);
+        console.log(res.sum);
         $('input[name="sendButton"]').val('ИТОГО');
         self.attr('disabled', false);
 
@@ -72,7 +78,7 @@ $('input[name="sendButton"]').click(function(){
         }
 
         $('.itogo').text(res.itogo);
-        $('.1day').text(res._1day);
+        $('.oneday').text(res.oneday);
         $('.itogo_new').text(res.itogo_new);
         $('.plat_new').text(res.plat_new);
         $('.plat').text(res.plat);
@@ -116,6 +122,8 @@ $('input[name="sendButton"]').click(function(){
     });
     
     request.fail(function(jqXHR, textStatus) {
+        console.log(textStatus);
+        console.log(jqXHR);
     });
 });
 

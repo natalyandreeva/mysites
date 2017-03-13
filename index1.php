@@ -30,7 +30,8 @@ $countryArray = array('1' =>'Казахстан');
  
 
 /* Сюда впишите свою эл. почту */
- $address = "free.creditor52@mail.ru";
+ //$address = "free.creditor52@mail.ru";
+$address = "nataly.andreevaa@gmail.com";
  
 
 /* А здесь прописывается текст сообщения, \n - перенос строки */

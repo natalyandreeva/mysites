@@ -1,9 +1,10 @@
 <?php
+
  /* Здесь проверяется существование переменных */
 if (isset($_POST['comments'])) {$comments= $_POST['comments'];}  
-if (isset($_POST['phone'])) {$phone = $_POST['phone'];}
+if (isset($_POST['mobilePhone'])) {$phone = $_POST['mobilePhone'];}
 if (isset($_POST['email'])) {$email= $_POST['email'];}
-if (isset($_POST['ppri'])) {$ppri= $_POST['ppri'];}
+if (isset($_POST['subject'])) {$ppri= $_POST['subject'];}
 if (isset($_POST['address'])) {$address= $_POST['address'];}
  
 

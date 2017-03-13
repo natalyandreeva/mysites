@@ -56,7 +56,7 @@
 	<meta name="copyright" content="Laziness (c)">
 
     <!-- увы ниже не смогу использовать стандартную общепринятую ссылку href="/favicon.ico" ввиду реализации многосайтовости -->
-    <link href="../favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
 	<meta content="ru" http-equiv="Content-Language">
 	<meta content="max-age=259200, must-revalidate" http-equiv="Cache-Control">
 	<!-- защищаем контент от копирования. Часть которая вставляется в хедер -->
@@ -95,9 +95,9 @@
 <nav class="c1 headmenu fb" id="bt-menu">
 	<center>
 <!-- <div><a href="#"><span class="md-trigger md-setperspective" data-modal="modal-3">Личный кабинет</span></a></div><div class="rd"></div> -->
-	<div id="sotr"><a href="../fb.php" rel="prefetch"><span title="Служба поддержки. Контакты">Служба поддержки</span></a></div>
+	<div id="sotr"><a href="fb.php" rel="prefetch"><span title="Служба поддержки. Контакты">Служба поддержки</span></a></div>
 	<div class="rd"></div>
-	<div id="calkul"><a href="../calculator.php" rel="prefetch"><span title="Кредитный калькулятор">Кредитный калькулятор</span></a></div>
+	<div id="calkul"><a href="calculator.php" rel="prefetch"><span title="Гарантийный платеж">Гарантийный платеж</span></a></div>
     <div class="rd"></div>
 
 <div id="ask"><a href="../ask.php"><span title="Ответы на вопросы по кредитному донорству">Вопросы и ответы</span></a>
@@ -113,15 +113,15 @@
 
 <div class="rd"></div>
 
-<div id="akciya"><a href="../akciya.php"><span title="Перечень наших акционных предложений">Наши акции для Вас!</span></a>
+<div id="akciya"><a href="akciya.php"><span title="Перечень наших акционных предложений">Наши акции для Вас!</span></a>
 <ul>
-	<li><a href="../anticollektor.php" title="Нашим заёмщикам мы оказываем антиколлекторскую помощь">Антиколлектор</a></li>
-	<li><a href="../why_it_is_beneficial.php" title="Несмотря на довольно высокую донорскую комиссию, тем не менее наши условия выгоднее большинства кредитных предложений на рынке кредитования!">Самый дешёвый займ</a></li>
-	<li><a href="../found_a_cheaper.php" title="У нас самый дешёвый кредит. Нашли более дешёвый кредит? Этого не может быть!">Знаете где дешевле?</a></li>
-	<li><a href="../credit_vacation.php" title="Нашим заёмщикам мы предоставляем три месяца отсрочки за которую не взымаем ни копейки!">Три месяца каникул</a></li>
-	<li><a href="../rally_cars_credit.php" title="Среди наших заёмщиков каждый год мы разыгрывает автомобиль">Розыгрыш авто</a></li>
-	<li><a href="../credit_darom_free.php" title="Мы предлагаем кредиты которые можно не возвращать! Абсолютно честно и без подводных камней!">Кредит даром!</a></li>
-	<li><a href="../akciya.php" title="Полный перечень наших акционных предложений">Другое</a></li>
+	<li><a href="anticollektor.php" title="Нашим заёмщикам мы оказываем антиколлекторскую помощь">Антиколлектор</a></li>
+	<li><a href="why_it_is_beneficial.php" title="Несмотря на довольно высокую донорскую комиссию, тем не менее наши условия выгоднее большинства кредитных предложений на рынке кредитования!">Самый дешёвый займ</a></li>
+	<li><a href="found_a_cheaper.php" title="У нас самый дешёвый кредит. Нашли более дешёвый кредит? Этого не может быть!">Знаете где дешевле?</a></li>
+	<li><a href="credit_vacation.php" title="Нашим заёмщикам мы предоставляем три месяца отсрочки за которую не взымаем ни копейки!">Три месяца каникул</a></li>
+	<li><a href="rally_cars_credit.php" title="Среди наших заёмщиков каждый год мы разыгрывает автомобиль">Розыгрыш авто</a></li>
+	<li><a href="credit_darom_free.php" title="Мы предлагаем кредиты которые можно не возвращать! Абсолютно честно и без подводных камней!">Кредит даром!</a></li>
+	<li><a href="akciya.php" title="Полный перечень наших акционных предложений">Другое</a></li>
 </ul>
 </div>
 
@@ -155,13 +155,13 @@
 </div><div style="height:100%">
 <h2 style="text-align:center">ОНЛАЙН:</h2>
 <div style="width: 140px;float:left; text-align:center">
-<img alt="" src="/4.jpg" style="width:140px;border-radius:50%">
+<img alt="" src="4.jpg" style="width:140px;border-radius:50%">
 <span class="bl" style="margin-top:5px">Дмитрий Николенко</span>
 <span class="bl" style="">Консультант СП</span>
 
 </div>
 <div style="width: 140px;float:right; text-align:center">
-<img alt="" src="/sheva.jpg" style="width:140px;border-radius:50%">
+<img alt="" src="sheva.jpg" style="width:140px;border-radius:50%">
 <span class="bl" style="margin-top:5px">Андрей Шевченко</span>
 <span class="bl" style="">Руководитель СП</span>
 </div>
@@ -185,6 +185,7 @@
 </center>
 </div>
 
+
 <div id="formDiv" style="display:none">
 
 <center>
@@ -194,10 +195,9 @@
 
 <div  id="nonauthorized" style="height:112px">
 <input onfocus="if(this.value=='Мобильный телефон') this.value='+';" onblur="if(this.value=='') this.value='Мобильный телефон';" class="field" value="Мобильный телефон" name="mobilePhone" id="mobilePhone" type="text" maxlength="50">
-
 <div>
-    <span id="error_fakePhone"  class="jserror" style="display:none">Укажите ваш настоящий телефон</span>
-    <span id="error_mobilePhone" class="jserror" style="display:none;">МОБИЛЬНЫЙ в формате +XXX00000000</span>
+<span id="error_fakePhone"  class="jserror" style="display:none">Укажите ваш настоящий телефон</span>
+<span id="error_mobilePhone" class="jserror" style="display:none;">МОБИЛЬНЫЙ в формате +XXX00000000</span>
 </div>
 
 
@@ -209,6 +209,7 @@
 <span id="error_emailPhone" class="jserror" style="display:none" maxlength="40">Ящики начинающиеся с телефонов запрещены</span>
 <span id="error_NotOn" class="jserror" style="display:none">Только НЕ на <b id="NotOn"></b></span>
 </div>
+
 
 </div>
 
@@ -849,8 +850,8 @@
 <script src="/js/rudiment/html5shiv.js"></script>
 <![endif]-->
 
-<script src="/jquery-1.11.2.min.js"></script>
-<script src="/js/coocies.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
+<script src="js/coocies.js"></script>
 <script type="text/javascript">
     $(window).load(function () {
         // Create the dropdown base
@@ -875,11 +876,11 @@
         });
     });
 </script>
-<script type="text/javascript" src="/js/borderMenu.js"></script>
-<script type="text/javascript" src="/js/modalEffects.js"></script>
-<script type="text/javascript" src="/js/saltwort.js"></script><!-- солянка. сборник мелких скриптов в одном файле -->
+<script type="text/javascript" src="js/borderMenu.js"></script>
+<script type="text/javascript" src="js/modalEffects.js"></script>
+<script type="text/javascript" src="js/saltwort.js"></script><!-- солянка. сборник мелких скриптов в одном файле -->
 <!-- modernizr.custom это JavaScript-библиотека, которая узнаёт, что из HTML5 и CSS3 умеет браузер пользователя. Определяя возможности браузера, разработчик может сделать откат некоторых функций для старых версий браузеров -->
-<script src="/js/rudiment/modernizr.custom.js"></script>
+<script src="js/rudiment/modernizr.custom.js"></script>
 <!-- защита от копирования. часть которая вставляется в футер -->
 <script type="text/javascript">disableSelection(document.body)</script>
 
@@ -890,8 +891,8 @@
 <!-- vk.com кросдоменный сбор группы ретаргетинга. владелец icred 
 <script type="text/javascript">(window.Image ? (new Image()) : document.createElement('img')).src = location.protocol + '//vk.com/rtrg?r=LFb0XdReAX9EhI*mH9AZYserxC4WOPDiXXEVyc62zhMG*IeelS9Zk2AqCr/nR1rQosfkg0b4/wLlcrk1Pev8faq1M1/WWSPW7KiNlPJCgRwZRprCAWBxPjAjJtrP3TW/eLoXUURw3hepWtWEQRey/5I6n5uKNljjJyCnwWRBV*w-';</script>
 -->
-<script src="/jquery-1.11.2.min.js"></script>
-<script src="/js/coocies.js"></script>
+<script src="jquery-1.11.2.min.js"></script>
+<script src="js/coocies.js"></script>
 
 <script type="text/javascript" src="js/Form_new.js"></script>
 
